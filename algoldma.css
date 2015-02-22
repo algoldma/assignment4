@@ -1,0 +1,1351 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 11, 2015, 5:04:31 PM
+    Author     : GoldDust_Au
+*/
+
+
+/* ===================  General Section  ==================================== */
+@import url('reset.css');
+* {
+    font-size:12pt;
+}
+
+.printonly{display:none;}
+html, body {height: 100%;}
+
+header,#studentInfo{
+    background-color: rgba(255, 255, 255, 0.26);
+    padding:1%;
+    
+}
+
+body {
+    width:100%;
+    background:#fff;
+    min-width:600px;
+    font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+}
+
+a{
+    border-width: .1em;
+}
+
+a[target="_blank"]{
+    border-bottom: 2px solid red !important;
+}
+
+a:link{
+    color: navy;
+    border-style: solid;
+    border-color: transparent;
+}
+a:visited{
+    color: #6666B3;
+    /*#90C13E !important;*/
+}
+a:hover {
+    border-style: solid;
+    border-color: navy;
+    background: #D8DFEA;
+}
+
+code{
+    font-family: "Courier New", Courier, monospace 
+}
+h1, h2, h3 {
+    display:block;
+    font-weight:bold;	
+    margin:.8em 0 .2em 0;
+    padding:0;
+}
+
+h1{
+    font-size:2em;
+}
+
+h2, h2 a{
+    font-size:1.5em;
+}
+
+h3{
+    font-size:1.5em;
+}
+
+img {
+    margin:10px 0 5px;
+
+}
+#slide img {
+
+    max-width: 100%;
+}
+
+p {
+    padding: .4em 0 .8em 0;;
+    margin: 0;
+}
+ol li {
+    padding-bottom: 1em;
+    clear: left;
+}
+ol ol li {
+    padding-bottom: 1em;
+
+}
+
+strong{
+    font-weight:bolder;
+}
+.firstLine{
+    text-indent: 5em;
+}
+
+/* style the errors in the form so they are visible */
+.mistake {
+    color: #fff;
+    background-color:#800;
+    border: thin solid #000;
+}
+
+/* style the list of errors that will show before the form */
+#errors ol li{
+    color: #880000;
+}
+
+
+/* ===================  Header  Section  ==================================== */
+header{width:124%;}
+#topbox{
+    padding: 1em 2em 0;
+    width: 74.3333%;
+}
+#header {
+    background-color: #3B5998;
+    border-bottom:1px solid #000;
+    color: #fff;
+    padding:10px;
+
+}
+
+#header a:link{
+    color: #fff;
+}
+
+#header a:hover{
+    background-color:#6D86B7;
+}
+
+#classtitle{
+    font-size:14px; 
+    font-weight:bold;
+}
+
+.todaysdate{
+    float:right;
+}
+
+#toolmenu{
+    float:right;
+}
+
+/* ===================  Student Info Section  =============================== */
+#studentInfo{  
+    color:black;
+    /* 
+    width: 16%;
+    border: thick dashed #3B5998;
+    float: left;*/
+    margin-bottom: 1em;
+    padding: .3em;
+    width:124.9%;
+}
+
+#studentGrade{
+    display:block;
+}	
+
+#studentGrade a:visited{
+    color: navy;
+}	
+
+#classRank{
+    display:block;
+}
+
+.noticeMe{ /* -------    for guests who are not registered , not accpeted submission */ 
+    font-weight: bold;
+    font-size: 16pt;
+    color: #ff0000;
+    background: #ff3;	
+}
+
+/* ===================  Main Navigation Section  ============================ */
+#mainMenu{
+    /* border-bottom: thin solid #3B5998;
+     float: right;
+    font-size: 10pt;
+    margin: auto;
+    min-width: 50em;
+    padding-bottom: 1.3em;
+    text-align: center;
+    width: 90%;*/
+    position:fixed;
+    left:-3.5%;
+    text-align:right;
+    list-style-position: inside;
+}
+
+#mainMenu ol{
+    /*padding-left:0;
+    margin-left:0;*/
+    list-style:none;
+}
+
+#mainMenu .activeLink a{
+    /*color: #000;	
+    background-color: #fff;
+    border-bottom: thick solid white;*/
+    border-right: thick solid white;
+}
+
+#mainMenu a{
+    /*text-decoration: none;*/
+}
+
+.menuLink{
+    /*display: inline;*/
+    margin-bottom: 11%;
+}
+.menuLink a{	
+    /*border-left: thin solid gray;
+    border-top: thin solid gray;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;*/
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+    border-top: thin solid gray;
+    border-left: thin solid gray;
+    border-bottom:thin solid gray;
+}
+
+.menuLink a:link{
+    background-color: #D8DFEA;
+    border-left: thin solid #3B5998;
+    border-top: thin solid #3B5998;
+    border-right: thin solid #3B5998;
+    color: navy;
+    padding: 1em;
+    text-decoration:underline overline;
+}
+
+nav#mainMenu ol li.menuLink a:visited{
+    background-color: #D8DFEA;
+    border-left: thin solid #3B5998;
+    border-top: thin solid #3B5998;
+    border-right: thin solid #3B5998;
+    color: navy !important;
+    padding: 1em;
+}
+.menuLink a:hover{
+    background-color: #3B5998;
+    border-left: thin solid green;
+    border-top: thin solid green;
+    border-right: thin solid green;
+    color: white;
+    padding: 1em;	
+}
+
+/* ===================  Main Content Section  =============================== */
+#mainContent {
+    background-color: rgba(255,255,255,0.75);;
+    border: 2px solid #FEFEFE;
+    border-radius: 0.5em;
+    overflow: auto;
+    padding: 2em 2em 50px;
+    width: 74.3333%;
+    float:right;
+    margin-right:3em;
+}
+
+#mainContent a:visited{
+    color: #6666b3; /*#ffaa11;*/
+}
+
+/*hilite me div goes out of bounds :( */
+div[style*="background"], .code{
+    width: 80% !important;
+}
+/* ===================  Main Content Section  =============================== */
+/* -------------------  Student Grade Page    ------------------------------- */
+
+/* -------------------------- Grades ---------------------------------------- */
+
+/* -- used for automatic grading -- */
+.certain{
+    background: #66aa66;
+}
+
+.uncertain{
+    background: #fff000;
+}
+/* -------------------------------- */
+.newCriteria{
+    background: #eeffee;
+}
+
+.oldCriteria{
+    background: #ffffff;
+}
+.wrongCriteria{
+    background: #ffeeee;
+}
+
+.zeroPoints {
+    border: thin solid black;
+}
+.bonusPoints{
+    border: thin solid blue;
+}
+.avggrade {
+    background-color: #ffffcc !important;
+    color: #ffcccc;
+}
+
+.failing {
+    background-color: red !important;
+}
+
+.hypo {
+    background-color: lightgreen !important;
+}
+.percent{
+    float: right;
+    padding-left: 0.25em;
+}
+#GradeCriteria{
+    top: 75px;
+    margin-bottom: 2em;
+}
+
+.GradesReleased {
+    background-color: #66cc00 !important; 
+    color: #ffffff !important;
+}
+.GradesReleased a:visited, .GradesReleased a:link{
+    color: #ffffff !important;
+}
+.GradesReleased .highlight {
+    color: #000000;
+}
+
+.GradingStarted {
+    background-color: #fff000 !important; 
+    color: #000000 !important;
+}
+
+.NotGraded {
+    background-color: #aa0000; 
+    color: #ffffcc;
+}
+#listStudents span.NotGraded {
+    background-color: #aa0000; 
+    color: #ffffcc;
+}
+
+#listStudents span.notSubmitted:before{
+    content: "* ";
+}
+#listStudents span.notSubmitted{
+    background-color: #fff;
+    color: #000;
+}
+table#grading{
+    margin: auto;
+}
+
+table#grading, table#grading td, table#grading th{
+    border: 1px solid gray; 
+    padding: 8px; 
+    text-align: right;
+}
+
+.standard {
+    color: Black;
+    text-align: left;
+    background-color: white;
+    font-family: Arial;
+    border-collapse: collapse;
+}
+
+.standard th {
+    border-color: black;
+    color: white;
+    border: solid #000 1px;
+    background-color:  #3b90cc;
+    text-align: center;
+    font-family: Arial, Verdana, Geneva, Helvetica, sens-serif;
+    padding: 4px; 
+}
+
+.standard td {
+    border: 1px dashed black;
+    text-align: right;
+    font-family: Arial, Verdana, Geneva, Helvetica, sens-serif;
+}
+
+
+/* ===================  Main Content Section  =============================== */
+/* -------------------  layout                ------------------------ */
+
+
+#slide{
+    /*	float: left;
+            width: 57.8888889%;/* 566px / 900px less some padding
+            padding: 0 1em 2em 0;
+            border-right: dashed thin #999;*/
+}
+
+#lectureSlide #otherMedia, #displayAssign #otherMedia, #lecture #otherMedia{
+    /*	float: right;
+            width: 17%; /* 331px / 900px */
+}
+
+#lecture #studentComments, #lectureSlide #studentComments, #displayAssign #studentComments{
+    clear: both;
+    margin-top: 1em; /* does not do anything :( */
+    /*width: 36.7777778%; /* 331px / 900px */
+}
+
+#txtComments{
+    width: 80%;
+    height: 5em;
+}
+/* -------------------  Assignment / Lectures pages  ------------------------ */
+.assignment a{
+    color: #cc4444;
+}
+
+ol.webReviewList li{
+    list-style-type: none;
+    margin-left: 0;
+    font-size: xx-small;
+}
+
+ol.webReviewList li.hidden{
+    display:none;
+}
+
+ol.webReviewList li.tentative{
+    background-color: #ffcfcf;
+    font-style: italic;
+}
+
+ol.webReviewList li.tentative:before{
+    content: "Tentative: ";
+}
+
+.current{
+    border: thin solid #C3C3E5;
+    font-weight: bold;
+}
+
+/* the perr grading page to highlight the current student you are working on */
+#peerGrade .current{
+    border: thick solid #C3C3E5;
+    font-weight: bold;
+}
+#peerGrade ol li{
+    padding: .5em;
+
+}
+.notStudentLink{ /* for instructor to see link is not avaliable to students */
+    background-color: #ffa;
+}
+
+.summary{
+    display: block;
+}
+
+.title{
+    padding: .5em;
+}
+
+.small{
+    width: 150px;
+}
+.fifty{
+    width: 50%;
+}
+.onehundred{
+    width: 100%;
+}
+figure.img-left{
+    border: thin solid darkslategray;
+    float: left;
+    padding: .5em;
+    margin-right: 1em;
+}
+figcaption{
+    text-align: center;
+    color: #839E99;
+    font-style: italic; 
+}
+
+.LecturesLink{ /* also used on calendar */  
+    list-style-type: none;
+}
+
+.lectureLeftPicture{
+    float: left; 
+    padding-right: 1em;
+}
+
+.lectureRightPicture{
+    float: right; 
+    padding-left: 1em;
+}
+
+.videoList li{
+    list-style-type: none;	
+}
+
+#otherMedia ol li{
+    list-style-type: none;
+    clear: both;
+    border-top: thin dotted  #999999;
+    padding-top: .4em;
+    padding-bottom: .4em;
+}
+
+#otherMedia ol li a[href*="http://"]{
+    border-left: darkblue solid medium;
+    border-bottom: darkblue solid medium;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+
+#otherMedia ol li audio{
+    /*	float: left; */
+    /*	height: 48px; */
+    width: 50%;
+    padding-right: .2em;
+    margin-top: 0;
+}
+#otherMedia ol li img{
+    float: left;
+    height: 1em;
+    margin-top: 0.5em;
+    padding-right: 0.2em;
+}
+
+.groupMembers li{
+    list-style-type: none;
+}
+
+
+
+
+/* ===================  Main Content Section  =============================== */
+/* -------------------  Calendar page         ------------------------------- */
+.Absent{
+    color: #ffbfbf !important;
+    background: #aa0011 !important;
+    text-align: center;	
+}
+
+.assignment{
+    color: #cc4444;
+    margin:0;
+    padding: 0.125em 0.25em 0 0.25em;
+    text-align:center; 	 
+}
+
+.callInSick{
+    float: left;
+    margin: 0;
+}
+
+div.date{
+    float: right; 
+    text-align:center; 
+    border: 1px solid gray; 
+    border-width: 0 0 1px 1px; 
+    padding: 0.125em 0.25em 0 0.25em; 
+    margin:0;  
+    background: #F3F3F3; 
+    width: 2em;
+}
+
+.Excused{
+    color: #aa0011 !important;
+    background: #ffadad !important;
+    text-align: center;	
+}
+
+#fullCalendar{
+    float:right;
+    font-size: small;
+}
+
+.labComplete{
+    color: #24B300 !important;
+    background: #ffcfcf !important;
+    text-align: center;	
+}
+
+.FreeDay{
+    color: #24B300 !important;
+    background: #aacfcf !important;
+    text-align: center;	
+}
+
+.Late{
+    color: #24B300 !important;
+    background: #ddffdf !important;
+    text-align: center;	
+}
+
+.Personal{
+    color: #aa0011 !important;
+    background: #ffcfcf !important;
+    text-align: center;	
+}
+
+.Present{
+    color: #24B300 !important;
+    background: #CCFFBF !important;
+    text-align: center;
+}
+
+.presentation{
+    border: dashed medium #ff0000 !important;
+}
+.Sick{
+    color: #aa0011 !important;
+    background: #ffadad !important;
+    text-align: center;	
+}
+
+.submitted{
+    border: thin solid green;
+}
+
+.notSubmitted{
+    border:thin solid red;
+}
+.TOPIC { 
+    color: #4444CC; 
+    text-align:center; 
+    padding: 0.125em 0.25em 0 0; 
+    margin:0;  
+}
+
+.VACA {
+    background-color: #dfdfff; /*#EABFFF;*/ 
+    font-style: italic;
+}
+
+ol.taVisists li{
+    list-style-type: none;
+    margin-left: 0;
+}
+
+ol.taVisists li.null{
+    font-weight: bold;
+}
+ol.taVisists li.null:before{
+    content: "Appt ";
+}
+
+ol.taVisists li.Show{
+    background: none repeat scroll 0 0 #ccffbf !important;
+    color: #24b300 !important;
+}
+ol.taVisists li.NoShow{
+    background: none repeat scroll 0 0 #aa0011 !important;
+    color: #ffbfbf !important;
+}
+
+tr.days{
+    width:18%;
+}
+
+tr.days th.sat, tr.days th.sun {
+    width:14%;
+}
+
+#calendar table tr.days th,  table tr.days th {
+    background-color: #224;
+    color: #cce;
+    font-weight: bold;
+    padding: 1px 0.33em;
+    text-align: center;
+}
+
+#calendar table tr#title th {
+    background-color: #AAC; 
+    color: black;
+    border: 1px solid #242;
+    font-size: 120%;
+}
+
+#calendar table td {
+    vertical-align:top;
+    padding:3px; 
+    border: 0px solid gray; 
+    border-width: 0 0 1px 1px;
+    width:14%;
+}
+
+#calendar table td.Sat {
+    border-width: 0 1px 1px 1px;
+}
+
+#calendar table a {
+    text-decoration: none;
+    font-weight: bold;
+    display: block; 
+}
+
+td.Sat div.date, td.Sun div.date{
+    border-width: 0;
+    color: gray; 
+    background: transparent;
+}
+
+td.Jun div.date, td.Aug div.date{
+    border-width: 0; 
+    color: gray; 
+    background: transparent;
+}	
+
+#calendar table td.Sat, #calendar table td.Sun {
+    background: #ddd;
+}
+
+#calendar table td.lastMonth, #calendar table td.nextMonth, #calendar table td.prevMonth {
+    background: #AAB; 
+    color: #889;
+}
+
+#calendar table tr#lastweek td {
+    border-bottom: 2px solid #AAB;
+}
+
+#calendar table td.atoday {
+    color: #C33;
+    font-weight: bold; 
+    background: #FF6; 
+    border: 1px solid black;
+}
+tr:nth-child(3) > th:nth-child(1){border-top-left-radius:8px;}
+tr:nth-child(3) > th:nth-child(7){border-top-right-radius:8px;}
+tr:nth-child(8) > td.Jan.days.Sun{border-bottom-left-radius: 8px}
+tr:nth-child(8) > td.Jan.days.Sat{border-bottom-right-radius: 8px;}
+
+tr:nth-child(10) > th:nth-child(1){border-top-left-radius:8px;}
+tr:nth-child(10) > th:nth-child(7){border-top-right-radius:8px;}
+tr:nth-child(14) > td.Feb.days.Sun{border-bottom-left-radius: 8px;}
+tr:nth-child(14) > td.Feb.days.Sat{border-bottom-right-radius: 8px;}
+
+tr:nth-child(16) > th:nth-child(1){border-top-left-radius:8px;}
+tr:nth-child(16) > th:nth-child(7){border-top-right-radius:8px;}
+tr:nth-child(21) > td.Mar.days.Sun{border-bottom-left-radius: 8px}
+tr:nth-child(21) > td:nth-child(4){border-bottom-right-radius: 8px;}
+
+tr:nth-child(23) > th:nth-child(1){border-top-left-radius:8px;}
+tr:nth-child(23) > th:nth-child(7){border-top-right-radius:8px;}
+tr:nth-child(28) > td.Apr.days.Sun{border-bottom-left-radius: 8px}
+tr:nth-child(28) > td:nth-child(6){border-bottom-right-radius: 8px;}
+
+tr:nth-child(30) > th:nth-child(1){border-top-left-radius:8px;}
+tr:nth-child(30) > th:nth-child(7){border-top-right-radius:8px;}
+tr:nth-child(36) > td.May.days.Sun{border-bottom-left-radius: 8px}
+tr:nth-child(36) > td:nth-child(2){border-bottom-right-radius: 8px;}
+
+
+/* ===================  Main Content Section  =============================== */
+/* -------------------  Call in sick Page     ------------------------------- */
+
+
+/* ===================  Main Content Section  =============================== */
+/* -------------------  Syllabus Page         ------------------------------- */
+.noBorder{border: 0px;}
+
+.hideText{ 
+    color: #ffffff;
+}
+
+.emailText{
+    color: #adadad;
+}
+.highlightRed{ 
+    background-color: #cc0033;
+    color: #ffffff;
+}
+
+#syllabus table, #syllabus table td, #syllabus table th{
+    border: 1px solid gray; 
+    padding: 3px; 
+}
+#tahours .hourBox:hover{
+    background-color: highlight;
+    color: white;
+}
+#tahours .hourBox{
+    padding: .3em;
+    border: thin solid blue;
+    border-radius: 8px;
+    text-align: center;
+    left: 0;
+    min-height:5em;
+}
+
+#tahours span{
+    display: block;
+}
+#tahours .dayColumn{
+    border: thin solid;
+    float: left;
+    font-size: 10px;
+    width: calc(100%/5.1);
+}
+#tahours .header{
+    text-align: center;
+    font-weight: bold;
+}
+#tahours a:hover{
+    background-color: highlight;
+}
+/* ===================  Main Content Section  =============================== */
+/* -------------------  Submit Assignment Page  ----------------------------- */
+#filesSubmited{
+    clear: both;
+    border-top: 1px dashed navy;
+    padding: 1em 1em 1em 1em;
+}
+#submitAssignment iframe{ 
+    width:70%;
+}
+
+.left {
+    text-align: left;
+}
+
+.submith1{font-weight: bold;
+          font-size: 14pt;
+}
+
+#submitAssignments{
+    width: 80%;
+}
+
+
+#txtDateRequest{
+    width: 7em;
+}
+
+/* ===================  Main Content Section  =============================== */
+/* -------------------  Lecture Page          ------------------------------- */
+#frmDemo{
+
+    /*width:100%;*/
+    overflow:auto;
+}
+
+
+#frmDemo pre, #tblValidation pre {
+    border: thin solid black;
+    padding: 0;
+    white-space:pre-wrap;
+}
+
+#frmDemo table, #tblValidation {
+    margin: auto;
+    border-collapse: collapse; 
+    border: 1px solid #839E99;
+    background: #f1f8ee; 
+    font: .7em Georgia, "Times New Roman", Times, serif; 
+    color: #033; 
+}
+
+#frmDemo table td, #frmDemo table th, #tblValidation td, #tblValidation th { padding: 3px 3px .75em 10px; line-height: 1.3em; 	border: thin dotted gray;}
+#frmDemo table th , #tblValidation th{
+    font-weight: bold; 
+    text-align: center; 
+    padding-right: .5em; 
+    vertical-align: top;
+}
+#frmDemo table td, #tblValidation td { 
+    text-align: left; 
+    padding-right: 1em;
+    border: thin dotted gray; 
+}
+
+#frmDemo, #tblValidation .odd {background-color: #DBE6DD;}
+#frmDemo, #tblValidation .even {background-color: #ffffff;}
+
+#sampleData table, #sampleData td, #sampleData th {
+    border-collapse:collapse; 
+    border: thin solid black; 
+    padding: .5em;
+}
+
+#sampleData td:first-child + td + td, #sampleData td:first-child + td + td + td {
+    text-align: center;
+}
+
+#tablestructure, #tablestructure td, #tablestructure th{
+    border:thin solid black; 
+    border-collapse:collapse;
+    padding: .5em;
+}
+
+/* comment section */
+div #studentComments{
+    /* clear: all;*/
+}
+#studentComments {
+    background-color: #E7E7E7;
+    margin-top: 1em;
+}
+
+#commentHeader{
+    background-color: #E0E0E0;
+    padding: .2em;
+}
+
+#addComment{
+    float: right;
+}
+
+.postedDate{
+    float: right;
+}
+
+#studentComments article{
+    padding: 1em;
+
+}
+
+.poster{
+    font-weight: bold;	
+}
+
+.comment{
+    background-color: #fff;
+}
+
+#studentComments img{
+    height:	1em;
+    margin-top: 0;
+    margin-bottom: -.1em;
+}
+/* -------------------  lecture slide page   ------------------------------- */
+
+#otherMedia{
+    background-color: #FFF8DC;
+    border: 2px solid;
+    border-radius: 0.5em;
+    clear: right;
+    float: right;
+    font-size: 10px;
+    margin-left: 1em;
+    padding: 0.5em;
+    width: 20em;
+}
+
+#media #otherMedia{
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    clear: none;
+    float: none;
+    margin: 0em;
+    padding: 0em;
+    width: 100%;
+}
+
+#media #otherMedia > h1{
+    display:none;
+}
+#media #otherMedia ol li {
+    clear: none;
+}
+/* -------------------upcoming aside  ------------------------------- */
+
+aside#upcoming{
+    background-color: rgba(0,0,0,0);
+    border: 2px solid;
+    border-radius: 0.5em;
+    clear: both;
+    float: right;
+    font-size: 10px;
+    margin-left: 1em;
+    padding: 0.5em;
+    width: 20em;
+    transition:background-color 2.5s;
+}
+#upcoming div.box{
+    clear: both;
+}
+
+#upcoming h2{
+    float: left;
+    margin: 0;
+}
+
+#upcoming ol li{
+    display: inline-block;
+    margin:0;
+    padding-left: .2em;
+}
+
+#upcoming ol.LecturesLink, #upcoming ol.AssignmentLink, #upcoming ol.examLink{
+    padding-left: 0;
+}
+
+#upcoming:hover{
+    background-color:#FFF8DC;
+}
+/* ===================  Footer Section        =============================== */
+footer{
+    background-color: #3B5998;
+    border: 2px solid #3B5998;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    clear: both;
+    color: #FFFFFF;
+    height: 50px;
+    left: 0;
+    margin-top: -50px;
+    margin-right:3em;
+    padding: 2em 2em 0;
+    position: relative;
+    float:right;
+    top: 0;
+    width: 74.3333%;
+}
+
+footer p{
+    padding: 1em;
+}
+
+/* -------  i put this here so you can have your name show up  -------------- */
+footer #author:after{
+    content:"Robert Erickson"; 
+}
+
+#ProcessingTime{
+    float: right;
+}
+
+/* ===================  Non validating Section  ============================= */
+pre { 
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;
+    border: thin solid black;
+    padding: 1.25em;
+}
+
+code{ 
+    white-space: pre-wrap;       /* css-3 */
+    padding: 1.25em;
+}
+
+/* ===================  Testing New Items Section  ========================== */
+/* used for grading page */
+/* slider  page css*/
+/*body{ font: 62.5% "Trebuchet MS", sans-serif; margin: 50px;}*/
+.demoHeaders { margin-top: 2em; }
+
+#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+
+#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+
+ul#icons {margin: 0; padding: 0;}
+
+ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+
+ul#icons span.ui-icon {float: left; margin: 0 4px;}
+
+body{
+    background-color: #dcdbd9;
+    color: #2C2C2C;
+    font: normal 100% Cambria, Georgia, serif;
+    width: 100%;
+    margin: 0 auto;
+}
+#toolmenu:before {
+    content: 'Standard Screen';
+}
+
+h1{
+    font-size: 1.5em; /* 24px / 16px */
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+/* ===================  Header  Section  ==================================== */
+#header {
+    background-color: #3B5998;
+    border-bottom:1px solid #000;
+    color: #fff;
+    padding:10px;
+}
+
+#header a:link, #header a:visited{
+    color: #fff;
+}
+
+#header a:hover{
+    background-color:#6D86B7;
+}
+
+#classtitle{
+    font-size: 1.3em;
+    font-weight:bold;
+}
+
+#toolmenu{
+    float:right;
+    margin-top: -1.1em;
+}
+#toolmenu ol li{
+    display:inline;
+}
+
+
+#termOfSubmission ol li li{
+    list-style-type: lower-alpha;	
+}
+
+table#asciiTable, table#asciiTable td{
+    border: thin solid black;
+    padding: .5em;
+}
+
+/*
+media query templates
+
+    Created on : May 12, 2014, 8:37:00 PM
+    Author     : robert erickson
+*/
+
+/* ================================ */
+
+
+/* ===================  Gradeing criteria pages  ============================= */
+#peerCriteria article section{
+    border: thin solid black; 
+    float: left; 
+    width: 40%; 
+    margin-right: 2em; 
+    margin-bottom: 2em; 
+    padding: .6em;
+}
+
+#peerCriteria article section .percent{
+    background-color: #CCFFBF; 
+    float:right;
+}
+
+#peerCriteria article section h2, 
+#peerCriteris article section p{
+    margin:0 .3em .3em .3em;
+}
+#peerCriteria article section#peer{
+    clear: both;
+    width: 85%;
+}
+
+
+@media screen and (max-width: 480px){
+    body{
+        background-color: black;
+        color: #2C2C2C;
+        font: normal 100% Cambria, Georgia, serif;
+
+        margin: 0 auto;
+    }
+
+    #toolmenu{
+        float:none;
+        margin-top: 0;
+        padding: .4em;
+        padding-right: 1em;
+    }
+    #toolmenu:before {
+        content: 'Max-Width: 480px';
+    }
+}
+
+@media screen and (max-width: 520px){
+    body{
+        background-color: grey;
+        color: #2C2C2C;
+        font: normal 100% Cambria, Georgia, serif;
+        margin: 0 auto;
+    }	
+    #toolmenu{
+        float:none;
+        margin-top: 0;
+        padding: .4em;
+    }
+    #toolmenu:before {
+        content: 'Max-Width: 520px';
+    }	
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background-color: #880000;
+        color: #2C2C2C;
+        font: normal 100% Cambria, Georgia, serif;
+        margin: 0 auto;
+    }	
+    #toolmenu:before {
+        content: 'Max-Width: 768px';
+    }	
+}
+
+/**************************************************/
+@media screen and (max-width: 520px){
+    /* ===================  Main Navigation Section  ============================ */
+    #mainMenu{
+        margin: 2em;	
+    }
+
+    #mainMenu a, #adminMenu a{
+        text-decoration: none;
+    }
+
+    .menuLink{
+        display: block;
+        min-height:4em;
+    }
+    .menuLink a{	
+        border-left: thin solid gray;
+        border-top: thin solid gray;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .menuLink a:link{
+
+        padding: 2em;
+    }
+
+    .menuLink a:visited{
+
+        padding: 2em;
+    }
+    .menuLink a:hover{
+
+        padding: 2em;	
+    }
+
+    /* ------------------  admin menu  ------------------------------------------ */
+    #adminMenu{
+
+
+
+        margin: 2em;
+
+    }
+
+
+}
+/*************************************************/
+@media screen and (min-width: 1200px){
+    body{
+        color: #2C2C2C;
+        background-color: green;
+        font: normal 100% Cambria, Georgia, serif;
+        width: 1200px;
+        margin: 0 auto;
+    }
+    #mainMenu{
+        /* border-bottom: thin solid #3B5998;
+         float: right;
+        font-size: 10pt;
+        margin: auto;
+        min-width: 50em;
+        padding-bottom: 1.3em;
+        text-align: center;
+        width: 90%;*/
+        position:fixed;
+        left:0%;
+        text-align:right;
+        list-style-position: inside;
+    }
+
+    #mainMenu ol{
+        /*padding-left:0;
+        margin-left:0;*/
+        list-style:none;
+    }
+
+    #mainMenu .activeLink a{
+        /*color: #000;	
+        background-color: #fff;
+        border-bottom: thick solid white;*/
+        border-right: thick solid white;
+    }
+
+    #mainMenu a{
+        /*text-decoration: none;*/
+    }
+
+    .menuLink{
+        /*display: inline;*/
+        margin-bottom: 11%;
+    }
+    #toolmenu:before {
+        content: 'Min-Width: 1200px';
+    }
+
+    .menuLink a:link{
+
+        padding: 1em;
+    }
+
+    .menuLink a:visited{
+
+        padding: 1em;
+    }
+    .menuLink a:hover{
+
+        padding: 1em;	
+    }
+}
+@media screen and (max-width: 1050px){
+    .menuLink{
+        margin-bottom:0%;
+        display:inline;
+    }
+    .menuLink a{
+        float:left;
+        border-radius:8px 8px 0 0;
+    }
+    #mainMenu{
+        width:110%;
+        padding-left:15%;
+        position:relative;
+    }
+    #mainMenu ol{height:3em;}
+    #toolmenu:before {
+        content: 'Min-Width: 1050px';
+    }
+}
+
