@@ -1,12 +1,4 @@
-<?php
-  $hub = array('hub-01.jpg', 'hub-02.jpg', 'hub-03.jpg', 'hub-04.jpg', 'hub-05.jpg', 'hub-06.jpg', 'hub-07.jpg', 
-                'hub-08.jpg', 'hub-09.jpg', 'hub-10.jpg', 'hub-11.jpg', 'hub-12.jpg', 'hub-13.jpg', 
-                'hub-14.jpg', 'hub-15.jpg', 'hub-16.jpg', 'hub-17.jpg', 'hub-18.jpg', 'hub-19.jpg', 
-                'hub-20.jpg', 'hub-21.jpg', 'hub-22.jpg', 'hub-23.jpg', 'hub-24.jpg', 'hub-25.jpg', ); // array of filenames
 
-  $i = rand(0, count($hub)-1); // generate random number size of the array
-  $selectedHub = "$hub[$i]"; // set variable equal to which random filename was chosen
-?>
 <!DOCTYPE html>
 <html lang="en">
  <head>
@@ -21,15 +13,6 @@
 <link href="https://algoldma.w3.uvm.edu/cs142/assignment4/print_algoldma.css" rel="stylesheet" type="text/css" media="print" />
 <link href="css/mainAdmin.css" rel="stylesheet" type="text/css" media="screen" />
 <link rel="shortcut icon" href="https://rerickso.w3.uvm.edu/education/blackboard/favicon.ico" >
-
-<style type="text/css">
-body{
-background: url(hubble/<?php echo $selectedHub; ?>) no-repeat;
-background-attachment: fixed;
-background-size:100% 100%;
-}
-</style>
-
 
 <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/sin/trunk/html5.js"></script>
@@ -84,9 +67,9 @@ $(function() {
 <span id="studentName">
 Student: algoldma [<a href="https://webauth.uvm.edu/webauth/logout">logout</a>]
 </span>
-<span id="studentGrade" >Current <a href="https://rerickso.w3.uvm.edu/education/blackboard/grades.php">Grade</a>: 78</span>
+<span id="studentGrade" >Current <a href="https://rerickso.w3.uvm.edu/education/blackboard/grades.php">Grade</a>: 78.1</span>
 <span id="classRank">
-Rank: 28 of 45
+Rank: 24 of 44
 </span>
 </aside> <!-- %^%^%^%^%^ student info %^%^%^%^%^ -->
 
@@ -105,8 +88,8 @@ Rank: 28 of 45
 <!-- place admin menu code here -->
 <!-- userlevel = 1.5  -->
 <article id="mainContent"> <!-- ######################## main Content 
-######################## --><aside id="upcoming"><h1>Milestones</h1><div class="box"><h1>Lecture </h1><ol class="LecturesLink"><li class="title summary"><a class="url" href="lecture.php?lid=105">CSS: Ch 14</a></li></ol></div><div class="box"><h1>Assignment </h1><ol class="AssignmentLink"><li class="title summary"><a class="url" href="assign.php?pid=25">Style a Table</a> Friday the 20th</li><li class="title summary">Peer Grading <span class="relaseDate">Due Date: 2014-06-05</span> Thursday the 5th</li>
-</ol></div><div class="box"><h1>Test </h1><ol class="examLink"><li class="title summary">Exam II Wednesday the 25th</li></ol></div></aside><h1>Syllabus</h1>
+######################## --><aside id="upcoming"><h1>Milestones</h1><div class="box"><h1>Assignment </h1><ol class="AssignmentLink"><li class="title summary"><a class="url" href="assign.php?pid=27">Redesign the Course Style</a> Friday the 13th</li><li class="title summary">Peer Grading <span class="relaseDate">Due Date: 2014-06-11</span> Wednesday the 11th</li>
+</ol></div><div class="box"><h1>Test </h1><ol class="examLink"><li class="title summary">Exam III Friday the 27th</li></ol></div></aside><h1>Syllabus</h1>
 <p>CRN: 11783 MWF starting at 12:50 to 01:40 in room KALKIN 001</p>
 <h2>Description</h2>
 <p>This course provides an in depth exploration of the foundation of  Cascading Style Sheets and covering Web Usability to help you create a pleasing user experience for visitors to your site.</p>
@@ -128,14 +111,6 @@ Rank: 28 of 45
     </tr>
 
     <tr>
-<td>
-Karol  Zieba</td>
-<td class='emailText'>kzieba@uvm.edu</td>
-<td>tbd</td>
-<td>Votey 301B</td>
-<td></td>
-</tr>
-<tr>
 <td>
 <a href='http://www.uvm.edu/~cems/?Page=employee/profile.php&SM=employee/_employeemenu.html&EmID=37'>Robert Erickson</a></td>
 <td class='emailText'>robert.erickson@uvm.edu</td>
@@ -172,11 +147,11 @@ Karol  Zieba</td>
 <article id="tahours">
     <h2>Teaching Assistants Office Hours</h2>
     <div class="dayColumn">
-        <div class="header">Monday<br>2015-02-23</div><a href="requestTa.php?aid=7&amp;dateValue=1424667600"><div class="hourBox" style="top: 0px; height: 120px;"><span class="startTime">10:00</span><span class="taName">Jenny</span><span class="where">Votey 351 A</span><span class="endTime">12:00</span></div></a><div class="filler" style="top: 120px; height: 60px;"></div><a href="requestTa.php?aid=3&amp;dateValue=1424667600"><div class="hourBox" style="top: 180px; height: 180px;"><span class="startTime">1:00</span><span class="taName">Karol</span><span class="where">Votey 347</span><span class="endTime">4:00</span></div></a><a href="requestTa.php?aid=1&amp;dateValue=1424667600"><div class="hourBox" style="top: 360px; height: 50px;"><span class="startTime">1:55</span><span class="taName">Bob</span><span class="where">Votey 331</span><span class="endTime">2:45</span></div></a><a href="requestTa.php?aid=13&amp;dateValue=1424667600"><div class="hourBox" style="top: 410px; height: 120px;"><span class="startTime">4:00</span><span class="taName">Simon</span><span class="where">Votey 351 A</span><span class="endTime">6:00</span></div></a><a href="requestTa.php?aid=13&amp;dateValue=1424667600"><div class="hourBox" style="top: 530px; height: 180px;"><span class="startTime">5:30</span><span class="taName">Simon</span><span class="where">Votey 351 A</span><span class="endTime">8:30</span></div></a></div> <!-- Monday --><div class="dayColumn">
-        <div class="header">Tuesday<br>2015-02-24</div><a href="requestTa.php?aid=2&amp;dateValue=1424754000"><div class="hourBox" style="top: 0px; height: 75px;"><span class="startTime">10:00</span><span class="taName">Jen</span><span class="where">Votey 351 A</span><span class="endTime">11:15</span></div></a><div class="filler" style="top: 75px; height: 195px;"></div><a href="requestTa.php?aid=8&amp;dateValue=1424754000"><div class="hourBox" style="top: 270px; height: 120px;"><span class="startTime">2:30</span><span class="taName">Nick</span><span class="where">Votey 351 A</span><span class="endTime">4:30</span></div></a></div> <!-- Tuesday --><div class="dayColumn">
-        <div class="header">Wednesday<br>2015-02-18</div><div class="filler" style="top: 0px; height: 120px;"></div><a href="requestTa.php?aid=7&amp;dateValue=1424235600"><div class="hourBox" style="top: 120px; height: 150px;"><span class="startTime">12:00</span><span class="taName">Jenny</span><span class="where">Votey 351 A</span><span class="endTime">2:30</span></div></a><a href="requestTa.php?aid=1&amp;dateValue=1424235600"><div class="hourBox" style="top: 270px; height: 50px;"><span class="startTime">1:55</span><span class="taName">Bob</span><span class="where">Votey 331</span><span class="endTime">2:45</span></div></a><div class="filler" style="top: 320px; height: 40px;"></div><a href="requestTa.php?aid=13&amp;dateValue=1424235600"><div class="hourBox" style="top: 360px; height: 120px;"><span class="startTime">4:00</span><span class="taName">Simon</span><span class="where">Votey 351 A</span><span class="endTime">6:00</span></div></a></div> <!-- Wednesday --><div class="dayColumn">
-        <div class="header">Thursday<br>2015-02-19</div><div class="filler" style="top: 0px; height: 180px;"></div><a href="requestTa.php?aid=2&amp;dateValue=1424322000"><div class="hourBox" style="top: 180px; height: 165px;"><span class="startTime">1:00</span><span class="taName">Jen</span><span class="where">Votey 351 A</span><span class="endTime">2:45</span></div></a><a href="requestTa.php?aid=7&amp;dateValue=1424322000"><div class="hourBox" style="top: 345px; height: 90px;"><span class="startTime">2:15</span><span class="taName">Jenny</span><span class="where">Votey 351 A</span><span class="endTime">3:45</span></div></a><a href="requestTa.php?aid=4&amp;dateValue=1424322000"><div class="hourBox" style="top: 435px; height: 90px;"><span class="startTime">4:00</span><span class="taName">Kylie</span><span class="where">Votey 351 A</span><span class="endTime">5:30</span></div></a></div> <!-- Thursday --><div class="dayColumn">
-        <div class="header">Friday<br>2015-02-20</div></div> <!-- Friday -->        
+        <div class="header">Monday<br>2015-03-09</div><a href="requestTa.php?aid=7&amp;dateValue=1425873600"><div class="hourBox" style="top: 0px; height: 120px;"><span class="startTime">10:00</span><span class="taName">Jenny</span><span class="where">Votey 351 A</span><span class="endTime">12:00</span></div></a><div class="filler" style="top: 120px; height: 60px;"></div><a href="requestTa.php?aid=3&amp;dateValue=1425873600"><div class="hourBox" style="top: 180px; height: 180px;"><span class="startTime">1:00</span><span class="taName">Karol</span><span class="where">Votey 347</span><span class="endTime">4:00</span></div></a><a href="requestTa.php?aid=1&amp;dateValue=1425873600"><div class="hourBox" style="top: 360px; height: 50px;"><span class="startTime">1:55</span><span class="taName">Bob</span><span class="where">Votey 331</span><span class="endTime">2:45</span></div></a><a href="requestTa.php?aid=13&amp;dateValue=1425873600"><div class="hourBox" style="top: 410px; height: 120px;"><span class="startTime">4:00</span><span class="taName">Simon</span><span class="where">Votey 351 A</span><span class="endTime">6:00</span></div></a><a href="requestTa.php?aid=13&amp;dateValue=1425873600"><div class="hourBox" style="top: 530px; height: 180px;"><span class="startTime">5:30</span><span class="taName">Simon</span><span class="where">Votey 351 A</span><span class="endTime">8:30</span></div></a></div> <!-- Monday --><div class="dayColumn">
+        <div class="header">Tuesday<br>2015-03-03</div><a href="requestTa.php?aid=2&amp;dateValue=1425358800"><div class="hourBox" style="top: 0px; height: 75px;"><span class="startTime">10:00</span><span class="taName">Jen</span><span class="where">Votey 351 A</span><span class="endTime">11:15</span></div></a><div class="filler" style="top: 75px; height: 195px;"></div><a href="requestTa.php?aid=8&amp;dateValue=1425358800"><div class="hourBox" style="top: 270px; height: 120px;"><span class="startTime">2:30</span><span class="taName">Nick</span><span class="where">Votey 351 A</span><span class="endTime">4:30</span></div></a></div> <!-- Tuesday --><div class="dayColumn">
+        <div class="header">Wednesday<br>2015-03-04</div><div class="filler" style="top: 0px; height: 120px;"></div><a href="requestTa.php?aid=7&amp;dateValue=1425445200"><div class="hourBox" style="top: 120px; height: 150px;"><span class="startTime">12:00</span><span class="taName">Jenny</span><span class="where">Votey 351 A</span><span class="endTime">2:30</span></div></a><a href="requestTa.php?aid=1&amp;dateValue=1425445200"><div class="hourBox" style="top: 270px; height: 50px;"><span class="startTime">1:55</span><span class="taName">Bob</span><span class="where">Votey 331</span><span class="endTime">2:45</span></div></a><div class="filler" style="top: 320px; height: 40px;"></div><a href="requestTa.php?aid=13&amp;dateValue=1425445200"><div class="hourBox" style="top: 360px; height: 120px;"><span class="startTime">4:00</span><span class="taName">Simon</span><span class="where">Votey 351 A</span><span class="endTime">6:00</span></div></a></div> <!-- Wednesday --><div class="dayColumn">
+        <div class="header">Thursday<br>2015-03-05</div><div class="filler" style="top: 0px; height: 180px;"></div><a href="requestTa.php?aid=2&amp;dateValue=1425531600"><div class="hourBox" style="top: 180px; height: 165px;"><span class="startTime">1:00</span><span class="taName">Jen</span><span class="where">Votey 351 A</span><span class="endTime">2:45</span></div></a><a href="requestTa.php?aid=7&amp;dateValue=1425531600"><div class="hourBox" style="top: 345px; height: 90px;"><span class="startTime">2:15</span><span class="taName">Jenny</span><span class="where">Votey 351 A</span><span class="endTime">3:45</span></div></a><a href="requestTa.php?aid=4&amp;dateValue=1425531600"><div class="hourBox" style="top: 435px; height: 90px;"><span class="startTime">4:00</span><span class="taName">Kylie</span><span class="where">Votey 351 A</span><span class="endTime">5:30</span></div></a></div> <!-- Thursday --><div class="dayColumn">
+        <div class="header">Friday<br>2015-03-06</div></div> <!-- Friday -->        
 </article>
 <p style="clear: both;"></p>
 <p><a target='_blank' href='http://www.uvm.edu/~rerickso/education/students.html'>Advice</a> (my 2 cents :)</p><h2>Learning Objectives</h2>

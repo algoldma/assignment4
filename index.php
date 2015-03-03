@@ -15,13 +15,16 @@
 
 <title>Page Auto Redirect</title>
 
-<meta http-equiv="refresh" content ="5; url=https://algoldma.w3.uvm.edu/cs142/assignment4/syllabus.php/">
+<meta http-equiv="refresh" content ="5; url=https://algoldma.w3.uvm.edu/cs142/assignment4/syllabus.php">
 
 </head>
 
 <body>
 
-Redirecting to syllabus
+    <p>Redirecting to syllabus</p>
+    <p>
+        <a href='https://algoldma.w3.uvm.edu/cs142/assignment4/syllabus.php'>Direct link</a>
+    </p>
 
 </body>
 

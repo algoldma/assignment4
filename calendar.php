@@ -1,12 +1,3 @@
-<?php
-  $hub = array('hub-01.jpg', 'hub-02.jpg', 'hub-03.jpg', 'hub-04.jpg', 'hub-05.jpg', 'hub-06.jpg', 'hub-07.jpg', 
-                'hub-08.jpg', 'hub-09.jpg', 'hub-10.jpg', 'hub-11.jpg', 'hub-12.jpg', 'hub-13.jpg', 
-                'hub-14.jpg', 'hub-15.jpg', 'hub-16.jpg', 'hub-17.jpg', 'hub-18.jpg', 'hub-19.jpg', 
-                'hub-20.jpg', 'hub-21.jpg', 'hub-22.jpg', 'hub-23.jpg', 'hub-24.jpg', 'hub-25.jpg', ); // array of filenames
-
-  $i = rand(0, count($hub)-1); // generate random number size of the array
-  $selectedHub = "$hub[$i]"; // set variable equal to which random filename was chosen
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,15 +13,6 @@
 <link href="https://algoldma.w3.uvm.edu/cs142/assignment4/print_algoldma.css" rel="stylesheet" type="text/css" media="print" />
 <link href="css/mainAdmin.css" rel="stylesheet" type="text/css" media="screen" />
 <link rel="shortcut icon" href="https://rerickso.w3.uvm.edu/education/blackboard/favicon.ico" >
-
-<style type="text/css">
-body{
-background: url(hubble/<?php echo $selectedHub; ?>) no-repeat;
-background-attachment: fixed;
-background-size:100% 100%;
-}
-</style>
-
 
 <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/sin/trunk/html5.js"></script>
@@ -85,9 +67,9 @@ $(function() {
 <span id="studentName">
 Student: algoldma [<a href="https://webauth.uvm.edu/webauth/logout">logout</a>]
 </span>
-<span id="studentGrade" >Current <a href="https://rerickso.w3.uvm.edu/education/blackboard/grades.php">Grade</a>: 76.9</span>
+<span id="studentGrade" >Current <a href="https://rerickso.w3.uvm.edu/education/blackboard/grades.php">Grade</a>: 78</span>
 <span id="classRank">
-Rank: 24 of 45
+Rank: 28 of 45
 </span>
 </aside> <!-- %^%^%^%^%^ student info %^%^%^%^%^ -->
 
@@ -106,8 +88,7 @@ Rank: 24 of 45
 <!-- place admin menu code here -->
 <!-- userlevel = 1.5  -->
 <article id="mainContent"> <!-- ######################## main Content 
-######################## --><aside id="upcoming"><h1>Milestones</h1><div class="box"><h1>Lecture </h1><ol class="LecturesLink"><li class="title summary"><a class="url" href="lecture.php?lid=104">CSS: Ch 11, 12, 13</a></li></ol></div><div class="box"><h1>Assignment </h1><ol class="AssignmentLink"><li class="title summary"><a class="url" href="assign.php?pid=25">Style a Table</a> Friday the 20th</li><li class="title summary">Peer Grading <span class="relaseDate">Due Date: 2014-06-05</span> Thursday the 5th</li>
-</ol></div><div class="box"><h1>Test </h1><ol class="examLink"><li class="title summary">Exam II Wednesday the 25th</li></ol></div></aside> <h2>Calendar</h2><table id='vcalendar'><tr id='attendanceRow'>
+######################## --><aside id="upcoming"><h1>Milestones</h1><div class="box"><h1>Assignment </h1><ol class="AssignmentLink"><li class="title summary"><a class="url" href="assign.php?pid=27">Redesign the Course Style</a> Friday the 13th</li></ol></div><div class="box"><h1>Test </h1><ol class="examLink"><li class="title summary">Exam II Wednesday the 25th</li></ol></div></aside> <h2>Calendar</h2><table id='vcalendar'><tr id='attendanceRow'>
 <th>Attendance for: algoldma</th><td class='Present'>Present</td><td class='Late'>Late</td><td class='Sick'>Sick</td><td class='Personal'>Personal</td><td class='Absent'>Absent</td><td class='FreeDay'>Free Day</td></tr>
 <tr class='monthHeader'><th colspan='7'>January 2015</th></tr><tr class='days'><th class='header'>S</th><th class='header'>M</th><th class='header'>T</th><th class='header'>W</th><th class='header'>T</th><th class='header'>F</th><th class='header'>S</th></tr><tr><td colspan='4'>&nbsp;</td><td class=' Jan days Thu'><div class='date '>1</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
 <td class=' Jan days Fri'><div class='date '>2</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
@@ -174,32 +155,32 @@ Rank: 24 of 45
 <td class=' Feb days Fri'><div class='date Present'>13</div><div class="event vevent INFO ">Group Working Session<br>Laptops ok</div>
 <ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
 <td class=' Feb days Sat'><div class='date '>14</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
-</tr><tr><td class=' Feb atoday Sun'><div class='date '>15</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
-<td class=' Feb days Mon VACA'><a class="callInSick" href="sick.php?dateValue=1424062800"><img alt="Call in sick" src="css/sick.jpg" /></a><div class='date '>16</div><div class="event vevent VACA ">Presidents' Day Holiday</div>
+</tr><tr><td class=' Feb days Sun'><div class='date '>15</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
+<td class=' Feb days Mon VACA'><div class='date '>16</div><div class="event vevent VACA ">Presidents' Day Holiday</div>
 <ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
-<td class=' Feb days Tue'><a class="callInSick" href="sick.php?dateValue=1424149200"><img alt="Call in sick" src="https://rerickso.w3.uvm.edu/education/blackboard/css/sick.jpg" /></a><div class='date '>17</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
-<td class=' Feb days Wed'><a class="callInSick" href="sick.php?dateValue=1424235600"><img alt="Call in sick" src="https://rerickso.w3.uvm.edu/education/blackboard/css/sick.jpg" /></a><div class='date '>18</div><div class="event vevent lecture "><a class="url" href="lecture.php?lid=105">CSS: Ch 14</a></div>
+<td class=' Feb days Tue'><div class='date '>17</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
+<td class=' Feb days Wed'><div class='date '>18</div><div class="event vevent lecture "><a class="url" href="lecture.php?lid=105">CSS: Ch 14</a></div>
 <div class="event vevent INFO ">substitute</div>
 <div class="event vevent INFO ">Group Working Session<br>Laptops ok</div>
 <ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
-<td class=' Feb days Thu'><a class="callInSick" href="sick.php?dateValue=1424322000"><img alt="Call in sick" src="https://rerickso.w3.uvm.edu/education/blackboard/css/sick.jpg" /></a><div class='date '>19</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
-<td class=' Feb days Fri'><a class="callInSick" href="sick.php?dateValue=1424408400"><img alt="Call in sick" src="https://rerickso.w3.uvm.edu/education/blackboard/css/sick.jpg" /></a><div class='date '>20</div><div class="event vevent INFO ">substitute</div>
+<td class=' Feb days Thu'><div class='date '>19</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
+<td class=' Feb days Fri'><div class='date Present'>20</div><div class="event vevent INFO ">substitute</div>
 <div class="event vevent INFO ">Group Working Session<br>Laptops ok</div>
-<div class="event vevent assignment  notSubmitted "><a class="url" href="assign.php?pid=25">Style a Table</a></div>
+<div class="event vevent assignment  submitted "><a class="url" href="assign.php?pid=25">Style a Table</a></div>
 <ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
 <td class=' Feb days Sat'><div class='date '>21</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
 </tr><tr><td class=' Feb days Sun'><div class='date '>22</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
-<td class=' Feb days Mon'><div class='date '>23</div><div class="event vevent INFO ">Group Working Session<br>Laptops ok</div>
+<td class=' Feb atoday Mon'><div class='date Present'>23</div><div class="event vevent INFO ">Group Working Session<br>Laptops ok</div>
 <ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
-<td class=' Feb days Tue'><div class='date '>24</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
-<td class=' Feb days Wed'><div class='date '>25</div><div class="event vevent assignment  notSubmitted ">Exam II</div>
+<td class=' Feb days Tue'><a class="callInSick" href="sick.php?dateValue=1424754000"><img alt="Call in sick" src="css/sick.jpg" /></a><div class='date '>24</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
+<td class=' Feb days Wed'><a class="callInSick" href="sick.php?dateValue=1424840400"><img alt="Call in sick" src="css/sick.jpg" /></a><div class='date '>25</div><div class="event vevent assignment  notSubmitted ">Exam II</div>
 <ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
-<td class=' Feb days Thu'><div class='date '>26</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
-<td class=' Feb days Fri'><div class='date '>27</div><div class="event vevent INFO ">Group Working Session<br>Laptops ok</div>
+<td class=' Feb days Thu'><a class="callInSick" href="sick.php?dateValue=1424926800"><img alt="Call in sick" src="css/sick.jpg" /></a><div class='date '>26</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
+<td class=' Feb days Fri'><a class="callInSick" href="sick.php?dateValue=1425013200"><img alt="Call in sick" src="css/sick.jpg" /></a><div class='date '>27</div><div class="event vevent INFO ">Group Working Session<br>Laptops ok</div>
 <ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
 <td class=' Feb days Sat'><div class='date '>28</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
 </tr><tr class='monthHeader'><th colspan='7'>March 2015</th></tr><tr class='days'><th class='header'>S</th><th class='header'>M</th><th class='header'>T</th><th class='header'>W</th><th class='header'>T</th><th class='header'>F</th><th class='header'>S</th></tr><tr><td class=' Mar days Sun'><div class='date '>1</div><ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
-<td class=' Mar days Mon VACA'><div class='date '>2</div><div class="event vevent VACA ">Spring Recess</div>
+<td class=' Mar days Mon VACA'><a class="callInSick" href="sick.php?dateValue=1425272400"><img alt="Call in sick" src="css/sick.jpg" /></a><div class='date '>2</div><div class="event vevent VACA ">Spring Recess</div>
 <ol class='webReviewList'></ol><ol class='taVisists'></ol></td>
 <td class=' Mar days Tue'><div class='date '>3</div><div class="event vevent INFO ">Town Meeting Day Recess</div>
 <ol class='webReviewList'></ol><ol class='taVisists'></ol></td>

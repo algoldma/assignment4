@@ -18,143 +18,145 @@ and open the template in the editor.
 .printonly{display:none;}
 html, body {height: 100%;}
 
-header,#studentInfo{
+    header,#studentInfo{
     background-color: rgba(255, 255, 255, 0.26);
     padding:1%;
-    
-}
 
-body {
+    }
+
+    body {
     width:100%;
     background:#fff;
+    background-image: url(hubble/randomBg.php);
+    background-attachment:fixed;
     min-width:600px;
     font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
-}
+    }
 
-a{
+    a{
     border-width: .1em;
-}
+    }
 
-a[target="_blank"]{
+    a[target="_blank"]{
     border-bottom: 2px solid red !important;
-}
+    }
 
-a:link{
+    a:link{
     color: navy;
     border-style: solid;
     border-color: transparent;
-}
-a:visited{
+    }
+    a:visited{
     color: #6666B3;
     /*#90C13E !important;*/
-}
-a:hover {
+    }
+    a:hover {
     border-style: solid;
     border-color: navy;
     background: #D8DFEA;
-}
+    }
 
-code{
+    code{
     font-family: "Courier New", Courier, monospace 
-}
-h1, h2, h3 {
+    }
+    h1, h2, h3 {
     display:block;
     font-weight:bold;	
     margin:.8em 0 .2em 0;
     padding:0;
-}
+    }
 
-h1{
+    h1{
     font-size:2em;
-}
+    }
 
-h2, h2 a{
+    h2, h2 a{
     font-size:1.5em;
-}
+    }
 
-h3{
+    h3{
     font-size:1.5em;
-}
+    }
 
-img {
+    img {
     margin:10px 0 5px;
 
-}
-#slide img {
+    }
+    #slide img {
 
     max-width: 100%;
-}
+    }
 
-p {
+    p {
     padding: .4em 0 .8em 0;;
     margin: 0;
-}
-ol li {
+    }
+    ol li {
     padding-bottom: 1em;
     clear: left;
-}
-ol ol li {
+    }
+    ol ol li {
     padding-bottom: 1em;
 
-}
+    }
 
-strong{
+    strong{
     font-weight:bolder;
-}
-.firstLine{
+    }
+    .firstLine{
     text-indent: 5em;
-}
+    }
 
-/* style the errors in the form so they are visible */
-.mistake {
+    /* style the errors in the form so they are visible */
+    .mistake {
     color: #fff;
     background-color:#800;
     border: thin solid #000;
-}
+    }
 
-/* style the list of errors that will show before the form */
-#errors ol li{
+    /* style the list of errors that will show before the form */
+    #errors ol li{
     color: #880000;
-}
+    }
 
 
-/* ===================  Header  Section  ==================================== */
-header{width:124%;}
-#topbox{
+    /* ===================  Header  Section  ==================================== */
+    header{width:124%;}
+    #topbox{
     padding: 1em 2em 0;
     width: 74.3333%;
-}
-#header {
+    }
+    #header {
     background-color: #3B5998;
     border-bottom:1px solid #000;
     color: #fff;
     padding:10px;
 
-}
+    }
 
-#header a:link{
+    #header a:link{
     color: #fff;
-}
+    }
 
-#header a:hover{
+    #header a:hover{
     background-color:#6D86B7;
-}
+    }
 
-#classtitle{
+    #classtitle{
     font-size:14px; 
     font-weight:bold;
-}
+    }
 
-.todaysdate{
+    .todaysdate{
     float:right;
-}
+    }
 
-#toolmenu{
+    #toolmenu{
     float:right;
-}
+    }
 
-/* ===================  Student Info Section  =============================== */
-#studentInfo{  
+    /* ===================  Student Info Section  =============================== */
+    #studentInfo{  
     color:black;
     /* 
     width: 16%;
@@ -163,31 +165,31 @@ header{width:124%;}
     margin-bottom: 1em;
     padding: .3em;
     width:124.9%;
-}
+    }
 
-#studentGrade{
+    #studentGrade{
     display:block;
-}	
+    }	
 
-#studentGrade a:visited{
+    #studentGrade a:visited{
     color: navy;
-}	
+    }	
 
-#classRank{
+    #classRank{
     display:block;
-}
+    }
 
-.noticeMe{ /* -------    for guests who are not registered , not accpeted submission */ 
+    .noticeMe{ /* -------    for guests who are not registered , not accpeted submission */ 
     font-weight: bold;
     font-size: 16pt;
     color: #ff0000;
     background: #ff3;	
-}
+    }
 
-/* ===================  Main Navigation Section  ============================ */
-#mainMenu{
+    /* ===================  Main Navigation Section  ============================ */
+    #mainMenu{
     /* border-bottom: thin solid #3B5998;
-     float: right;
+    float: right;
     font-size: 10pt;
     margin: auto;
     min-width: 50em;
@@ -198,30 +200,30 @@ header{width:124%;}
     left:-3.5%;
     text-align:right;
     list-style-position: inside;
-}
+    }
 
-#mainMenu ol{
+    #mainMenu ol{
     /*padding-left:0;
     margin-left:0;*/
     list-style:none;
-}
+    }
 
-#mainMenu .activeLink a{
+    #mainMenu .activeLink a{
     /*color: #000;	
     background-color: #fff;
     border-bottom: thick solid white;*/
     border-right: thick solid white;
-}
+    }
 
-#mainMenu a{
+    #mainMenu a{
     /*text-decoration: none;*/
-}
+    }
 
-.menuLink{
+    .menuLink{
     /*display: inline;*/
     margin-bottom: 11%;
-}
-.menuLink a{	
+    }
+    .menuLink a{	
     /*border-left: thin solid gray;
     border-top: thin solid gray;
     border-top-left-radius: 8px;
@@ -231,37 +233,36 @@ header{width:124%;}
     border-top: thin solid gray;
     border-left: thin solid gray;
     border-bottom:thin solid gray;
-}
+    }
 
-.menuLink a:link{
+    .menuLink a:link{
     background-color: #D8DFEA;
     border-left: thin solid #3B5998;
     border-top: thin solid #3B5998;
     border-right: thin solid #3B5998;
     color: navy;
     padding: 1em;
-    text-decoration:underline overline;
-}
+    }
 
-nav#mainMenu ol li.menuLink a:visited{
+    nav#mainMenu ol li.menuLink a:visited{
     background-color: #D8DFEA;
     border-left: thin solid #3B5998;
     border-top: thin solid #3B5998;
     border-right: thin solid #3B5998;
     color: navy !important;
     padding: 1em;
-}
-.menuLink a:hover{
+    }
+    .menuLink a:hover{
     background-color: #3B5998;
     border-left: thin solid green;
     border-top: thin solid green;
     border-right: thin solid green;
     color: white;
     padding: 1em;	
-}
+    }
 
-/* ===================  Main Content Section  =============================== */
-#mainContent {
+    /* ===================  Main Content Section  =============================== */
+    #mainContent {
     background-color: rgba(255,255,255,0.75);;
     border: 2px solid #FEFEFE;
     border-radius: 0.5em;
@@ -270,119 +271,119 @@ nav#mainMenu ol li.menuLink a:visited{
     width: 74.3333%;
     float:right;
     margin-right:3em;
-}
+    }
 
-#mainContent a:visited{
+    #mainContent a:visited{
     color: #6666b3; /*#ffaa11;*/
-}
+    }
 
-/*hilite me div goes out of bounds :( */
-div[style*="background"], .code{
+    /*hilite me div goes out of bounds :( */
+    div[style*="background"], .code{
     width: 80% !important;
-}
-/* ===================  Main Content Section  =============================== */
-/* -------------------  Student Grade Page    ------------------------------- */
+    }
+    /* ===================  Main Content Section  =============================== */
+    /* -------------------  Student Grade Page    ------------------------------- */
 
-/* -------------------------- Grades ---------------------------------------- */
+    /* -------------------------- Grades ---------------------------------------- */
 
-/* -- used for automatic grading -- */
-.certain{
+    /* -- used for automatic grading -- */
+    .certain{
     background: #66aa66;
-}
+    }
 
-.uncertain{
+    .uncertain{
     background: #fff000;
-}
-/* -------------------------------- */
-.newCriteria{
+    }
+    /* -------------------------------- */
+    .newCriteria{
     background: #eeffee;
-}
+    }
 
-.oldCriteria{
+    .oldCriteria{
     background: #ffffff;
-}
-.wrongCriteria{
+    }
+    .wrongCriteria{
     background: #ffeeee;
-}
+    }
 
-.zeroPoints {
+    .zeroPoints {
     border: thin solid black;
-}
-.bonusPoints{
+    }
+    .bonusPoints{
     border: thin solid blue;
-}
-.avggrade {
+    }
+    .avggrade {
     background-color: #ffffcc !important;
     color: #ffcccc;
-}
+    }
 
-.failing {
+    .failing {
     background-color: red !important;
-}
+    }
 
-.hypo {
+    .hypo {
     background-color: lightgreen !important;
-}
-.percent{
+    }
+    .percent{
     float: right;
     padding-left: 0.25em;
-}
-#GradeCriteria{
+    }
+    #GradeCriteria{
     top: 75px;
     margin-bottom: 2em;
-}
+    }
 
-.GradesReleased {
+    .GradesReleased {
     background-color: #66cc00 !important; 
     color: #ffffff !important;
-}
-.GradesReleased a:visited, .GradesReleased a:link{
+    }
+    .GradesReleased a:visited, .GradesReleased a:link{
     color: #ffffff !important;
-}
-.GradesReleased .highlight {
+    }
+    .GradesReleased .highlight {
     color: #000000;
-}
+    }
 
-.GradingStarted {
+    .GradingStarted {
     background-color: #fff000 !important; 
     color: #000000 !important;
-}
+    }
 
-.NotGraded {
+    .NotGraded {
     background-color: #aa0000; 
     color: #ffffcc;
-}
-#listStudents span.NotGraded {
+    }
+    #listStudents span.NotGraded {
     background-color: #aa0000; 
     color: #ffffcc;
-}
+    }
 
-#listStudents span.notSubmitted:before{
+    #listStudents span.notSubmitted:before{
     content: "* ";
-}
-#listStudents span.notSubmitted{
+    }
+    #listStudents span.notSubmitted{
     background-color: #fff;
     color: #000;
-}
-table#grading{
+    }
+    table#grading{
     margin: auto;
-}
+    }
 
-table#grading, table#grading td, table#grading th{
+    table#grading, table#grading td, table#grading th{
     border: 1px solid gray; 
     padding: 8px; 
     text-align: right;
-}
+    }
 
-.standard {
+    .standard {
     color: Black;
     text-align: left;
     background-color: white;
     font-family: Arial;
     border-collapse: collapse;
-}
+    }
 
-.standard th {
+    .standard th {
     border-color: black;
     color: white;
     border: solid #000 1px;
@@ -390,140 +391,140 @@ table#grading, table#grading td, table#grading th{
     text-align: center;
     font-family: Arial, Verdana, Geneva, Helvetica, sens-serif;
     padding: 4px; 
-}
+    }
 
-.standard td {
+    .standard td {
     border: 1px dashed black;
     text-align: right;
     font-family: Arial, Verdana, Geneva, Helvetica, sens-serif;
-}
+    }
 
 
-/* ===================  Main Content Section  =============================== */
-/* -------------------  layout                ------------------------ */
+    /* ===================  Main Content Section  =============================== */
+    /* -------------------  layout                ------------------------ */
 
 
-#slide{
+    #slide{
     /*	float: left;
-            width: 57.8888889%;/* 566px / 900px less some padding
-            padding: 0 1em 2em 0;
-            border-right: dashed thin #999;*/
-}
+    width: 57.8888889%;/* 566px / 900px less some padding
+    padding: 0 1em 2em 0;
+    border-right: dashed thin #999;*/
+    }
 
-#lectureSlide #otherMedia, #displayAssign #otherMedia, #lecture #otherMedia{
+    #lectureSlide #otherMedia, #displayAssign #otherMedia, #lecture #otherMedia{
     /*	float: right;
-            width: 17%; /* 331px / 900px */
-}
+    width: 17%; /* 331px / 900px */
+    }
 
-#lecture #studentComments, #lectureSlide #studentComments, #displayAssign #studentComments{
+    #lecture #studentComments, #lectureSlide #studentComments, #displayAssign #studentComments{
     clear: both;
     margin-top: 1em; /* does not do anything :( */
     /*width: 36.7777778%; /* 331px / 900px */
-}
+    }
 
-#txtComments{
+    #txtComments{
     width: 80%;
     height: 5em;
-}
-/* -------------------  Assignment / Lectures pages  ------------------------ */
-.assignment a{
+    }
+    /* -------------------  Assignment / Lectures pages  ------------------------ */
+    .assignment a{
     color: #cc4444;
-}
+    }
 
-ol.webReviewList li{
+    ol.webReviewList li{
     list-style-type: none;
     margin-left: 0;
     font-size: xx-small;
-}
+    }
 
-ol.webReviewList li.hidden{
+    ol.webReviewList li.hidden{
     display:none;
-}
+    }
 
-ol.webReviewList li.tentative{
+    ol.webReviewList li.tentative{
     background-color: #ffcfcf;
     font-style: italic;
-}
+    }
 
-ol.webReviewList li.tentative:before{
+    ol.webReviewList li.tentative:before{
     content: "Tentative: ";
-}
+        }
 
-.current{
-    border: thin solid #C3C3E5;
-    font-weight: bold;
-}
+        .current{
+        border: thin solid #C3C3E5;
+        font-weight: bold;
+        }
 
-/* the perr grading page to highlight the current student you are working on */
-#peerGrade .current{
-    border: thick solid #C3C3E5;
-    font-weight: bold;
-}
-#peerGrade ol li{
-    padding: .5em;
+        /* the perr grading page to highlight the current student you are working on */
+        #peerGrade .current{
+        border: thick solid #C3C3E5;
+        font-weight: bold;
+        }
+        #peerGrade ol li{
+        padding: .5em;
 
-}
-.notStudentLink{ /* for instructor to see link is not avaliable to students */
-    background-color: #ffa;
-}
+        }
+        .notStudentLink{ /* for instructor to see link is not avaliable to students */
+        background-color: #ffa;
+        }
 
-.summary{
-    display: block;
-}
+        .summary{
+        display: block;
+        }
 
-.title{
-    padding: .5em;
-}
+        .title{
+        padding: .5em;
+        }
 
-.small{
-    width: 150px;
-}
-.fifty{
-    width: 50%;
-}
-.onehundred{
-    width: 100%;
-}
-figure.img-left{
-    border: thin solid darkslategray;
-    float: left;
-    padding: .5em;
-    margin-right: 1em;
-}
-figcaption{
-    text-align: center;
-    color: #839E99;
-    font-style: italic; 
-}
+        .small{
+        width: 150px;
+        }
+        .fifty{
+        width: 50%;
+        }
+        .onehundred{
+        width: 100%;
+        }
+        figure.img-left{
+        border: thin solid darkslategray;
+        float: left;
+        padding: .5em;
+        margin-right: 1em;
+        }
+        figcaption{
+        text-align: center;
+        color: #839E99;
+        font-style: italic; 
+        }
 
-.LecturesLink{ /* also used on calendar */  
-    list-style-type: none;
-}
+        .LecturesLink{ /* also used on calendar */  
+        list-style-type: none;
+        }
 
-.lectureLeftPicture{
-    float: left; 
-    padding-right: 1em;
-}
+        .lectureLeftPicture{
+        float: left; 
+        padding-right: 1em;
+        }
 
-.lectureRightPicture{
-    float: right; 
-    padding-left: 1em;
-}
+        .lectureRightPicture{
+        float: right; 
+        padding-left: 1em;
+        }
 
-.videoList li{
-    list-style-type: none;	
-}
+        .videoList li{
+        list-style-type: none;	
+        }
 
-#otherMedia ol li{
-    list-style-type: none;
-    clear: both;
-    border-top: thin dotted  #999999;
-    padding-top: .4em;
-    padding-bottom: .4em;
-}
+        #otherMedia ol li{
+        list-style-type: none;
+        clear: both;
+        border-top: thin dotted  #999999;
+        padding-top: .4em;
+        padding-bottom: .4em;
+        }
 
-#otherMedia ol li a[href*="http://"]{
-    border-left: darkblue solid medium;
+        #otherMedia ol li a[href*="http://"]{
+        border-left: darkblue solid medium;
     border-bottom: darkblue solid medium;
     padding-left: 1em;
     padding-right: 1em;
@@ -790,7 +791,17 @@ tr:nth-child(36) > td:nth-child(2){border-bottom-right-radius: 8px;}
     background-color: #cc0033;
     color: #ffffff;
 }
-
+#syllabus table{border-radius:8px;}
+#mainContent > table:nth-child(7) > tbody > tr:nth-child(1) > th,#mainContent > table:nth-child(7) > tbody > tr:nth-child(4) > th{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#mainContent > table:nth-child(7) > tbody > tr:nth-child(4) > td:nth-child(1), #mainContent > table:nth-child(7) > tbody > tr:nth-child(7) > td:nth-child(1){
+    border-bottom-left-radius:8px;
+}
+#mainContent > table:nth-child(7) > tbody > tr:nth-child(4) > td:nth-child(5),#mainContent > table:nth-child(7) > tbody > tr:nth-child(7) > td:nth-child(5){
+    border-bottom-right-radius:8px;
+}
 #syllabus table, #syllabus table td, #syllabus table th{
     border: 1px solid gray; 
     padding: 3px; 
@@ -806,23 +817,37 @@ tr:nth-child(36) > td:nth-child(2){border-bottom-right-radius: 8px;}
     text-align: center;
     left: 0;
     min-height:5em;
+    max-height:5em;
+    margin-left:2px;
+    margin-right:2px;
 }
 
 #tahours span{
     display: block;
 }
 #tahours .dayColumn{
-    border: thin solid;
     float: left;
     font-size: 10px;
     width: calc(100%/5.1);
+    min-height:700px;
+    margin-right:-1px;
+    border:thin solid black;
 }
+.dayColumn:nth-child(5){margin-right:0;}
+.dayColumn:nth-child(6){border-top-right-radius:8px;    border-bottom-right-radius:8px;}
+.dayColumn:nth-child(2){border-top-left-radius:8px;    border-bottom-left-radius:8px;}
 #tahours .header{
     text-align: center;
     font-weight: bold;
+    border-bottom:thin solid black;
 }
 #tahours a:hover{
     background-color: highlight;
+    border-style:thin;
+    border-collapse:collapse;
+    border-color:rgba(0,0,0,0);
+    text-decoration:none;
+    position:relative;
 }
 /* ===================  Main Content Section  =============================== */
 /* -------------------  Submit Assignment Page  ----------------------------- */
@@ -1080,6 +1105,7 @@ body{
     background-color: #dcdbd9;
     color: #2C2C2C;
     font: normal 100% Cambria, Georgia, serif;
+    background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBG.jpg);
     width: 100%;
     margin: 0 auto;
 }
@@ -1173,7 +1199,7 @@ media query templates
         background-color: black;
         color: #2C2C2C;
         font: normal 100% Cambria, Georgia, serif;
-
+        background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBG.jpg);
         margin: 0 auto;
     }
 
@@ -1190,6 +1216,7 @@ media query templates
 
 @media screen and (max-width: 520px){
     body{
+        background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBG.jpg);
         background-color: grey;
         color: #2C2C2C;
         font: normal 100% Cambria, Georgia, serif;
@@ -1208,6 +1235,7 @@ media query templates
 @media screen and (max-width: 768px){
     body{
         background-color: #880000;
+        background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBG.jpg);
         color: #2C2C2C;
         font: normal 100% Cambria, Georgia, serif;
         margin: 0 auto;
@@ -1270,6 +1298,7 @@ media query templates
 @media screen and (min-width: 1200px){
     body{
         color: #2C2C2C;
+        background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBg.php);        
         background-color: green;
         font: normal 100% Cambria, Georgia, serif;
         width: 1200px;

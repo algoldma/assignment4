@@ -1,12 +1,3 @@
-<?php
-  $hub = array('hub-01.jpg', 'hub-02.jpg', 'hub-03.jpg', 'hub-04.jpg', 'hub-05.jpg', 'hub-06.jpg', 'hub-07.jpg', 
-                'hub-08.jpg', 'hub-09.jpg', 'hub-10.jpg', 'hub-11.jpg', 'hub-12.jpg', 'hub-13.jpg', 
-                'hub-14.jpg', 'hub-15.jpg', 'hub-16.jpg', 'hub-17.jpg', 'hub-18.jpg', 'hub-19.jpg', 
-                'hub-20.jpg', 'hub-21.jpg', 'hub-22.jpg', 'hub-23.jpg', 'hub-24.jpg', 'hub-25.jpg', ); // array of filenames
-
-  $i = rand(0, count($hub)-1); // generate random number size of the array
-  $selectedHub = "$hub[$i]"; // set variable equal to which random filename was chosen
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,15 +13,6 @@
 <link href="https://algoldma.w3.uvm.edu/cs142/assignment4/print_algoldma.css" rel="stylesheet" type="text/css" media="print" />
 <link href="css/mainAdmin.css" rel="stylesheet" type="text/css" media="screen" />
 <link rel="shortcut icon" href="https://rerickso.w3.uvm.edu/education/blackboard/favicon.ico" >
-
-<style type="text/css">
-body{
-background: url(hubble/<?php echo $selectedHub; ?>);
-background-attachment: fixed;
-background-size:100% 100%;
-}
-</style>
-
 
 <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/sin/trunk/html5.js"></script>
@@ -85,9 +67,9 @@ $(function() {
 <span id="studentName">
 Student: algoldma [<a href="https://webauth.uvm.edu/webauth/logout">logout</a>]
 </span>
-<span id="studentGrade" >Current <a href="https://rerickso.w3.uvm.edu/education/blackboard/grades.php">Grade</a>: 76.9</span>
+<span id="studentGrade" >Current <a href="https://rerickso.w3.uvm.edu/education/blackboard/grades.php">Grade</a>: 78</span>
 <span id="classRank">
-Rank: 24 of 45
+Rank: 28 of 45
 </span>
 </aside> <!-- %^%^%^%^%^ student info %^%^%^%^%^ -->
 
@@ -106,8 +88,7 @@ Rank: 24 of 45
 <!-- place admin menu code here -->
 <!-- userlevel = 1.5  -->
 <article id="mainContent"> <!-- ######################## main Content 
-######################## --><aside id="upcoming"><h1>Milestones</h1><div class="box"><h1>Lecture </h1><ol class="LecturesLink"><li class="title summary"><a class="url" href="lecture.php?lid=104">CSS: Ch 11, 12, 13</a></li></ol></div><div class="box"><h1>Assignment </h1><ol class="AssignmentLink"><li class="title summary"><a class="url" href="assign.php?pid=25">Style a Table</a> Friday the 20th</li><li class="title summary">Peer Grading <span class="relaseDate">Due Date: 2014-06-05</span> Thursday the 5th</li>
-</ol></div><div class="box"><h1>Test </h1><ol class="examLink"><li class="title summary">Exam II Wednesday the 25th</li></ol></div></aside><p>Sorry you cannot be sick today. Try the calendar page where you can call in a week in advance.<p>Today: February 15, 2015<p>Class Time: 12:50<p>Time Now: 23:33</article> <!-- ########### main Content ########### -->
+######################## --><aside id="upcoming"><h1>Milestones</h1><div class="box"><h1>Assignment </h1><ol class="AssignmentLink"><li class="title summary"><a class="url" href="assign.php?pid=27">Redesign the Course Style</a> Friday the 13th</li></ol></div><div class="box"><h1>Test </h1><ol class="examLink"><li class="title summary">Exam II Wednesday the 25th</li></ol></div></aside><p>Sorry you cannot be sick today. Try the calendar page where you can call in a week in advance.<p>Today: February 23, 2015<p>Class Time: 12:50<p>Time Now: 14:58</article> <!-- ########### main Content ########### -->
 <footer>
 <p>Web designed by: <span id="author"></span>
 </p>
