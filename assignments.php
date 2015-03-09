@@ -67,7 +67,7 @@ $(function() {
 <span id="studentName">
 Student: algoldma [<a href="https://webauth.uvm.edu/webauth/logout">logout</a>]
 </span>
-<span id="studentGrade" >Current <a href="https://rerickso.w3.uvm.edu/education/blackboard/grades.php">Grade</a>: 78</span>
+<span id="studentGrade" >Current <a href="grades.php">Grade</a>: 78</span>
 <span id="classRank">
 Rank: 28 of 45
 </span>
@@ -88,10 +88,10 @@ Rank: 28 of 45
 <!-- place admin menu code here -->
 <!-- userlevel = 1.5  -->
 <article id="mainContent"> <!-- ######################## main Content 
-######################## --><aside id="upcoming"><h1>Milestones</h1><div class="box"><h1>Assignment </h1><ol class="AssignmentLink"><li class="title summary"><a class="url" href="assign.php?pid=27">Redesign the Course Style</a> Friday the 13th</li></ol></div><div class="box"><h1>Test </h1><ol class="examLink"><li class="title summary">Exam II Wednesday the 25th</li></ol></div></aside><h2>Assignments</h2><ol class="AssignmentsLink"><li class="title summary">2015-01-23 - <a class="url" href="assign.php?pid=22">Style a Form</a> Date Submitted: Jan 23, 2015</li>
-<li class="title summary">2015-01-30 - Exam I</a></li><li class="title summary">2015-02-06 - <a class="url" href="assign.php?pid=24">Styling a Resume</a> Date Submitted: Feb 06, 2015</li>
-<li class="title summary">2015-02-20 - <a class="url" href="assign.php?pid=25">Style a Table</a> Date Submitted: Feb 20, 2015</li>
-<li class="title summary">2015-02-25 - Exam II</a></li><li class="title summary">2015-03-13 - <a class="url" href="assign.php?pid=27">Redesign the Course Style</a></li>
+######################## --><aside id="upcoming"><h1>Milestones</h1><div class="box"><h1>Assignment </h1><ol class="AssignmentLink"><li class="title summary"><a class="url" href="https://rerickso.w3.uvm.edu/education/blackboard/assign.php?pid=27">Redesign the Course Style</a> Friday the 13th</li></ol></div><div class="box"><h1>Test </h1><ol class="examLink"><li class="title summary">Exam II Wednesday the 25th</li></ol></div></aside><h2>Assignments</h2><ol class="AssignmentsLink"><li class="title summary">2015-01-23 - <a class="url" href="https://rerickso.w3.uvm.edu/education/blackboard/assign.php?pid=22">Style a Form</a> Date Submitted: Jan 23, 2015</li>
+<li class="title summary">2015-01-30 - Exam I</a></li><li class="title summary">2015-02-06 - <a class="url" href="https://rerickso.w3.uvm.edu/education/blackboard/assign.php?pid=24">Styling a Resume</a> Date Submitted: Feb 06, 2015</li>
+<li class="title summary">2015-02-20 - <a class="url" href="https://rerickso.w3.uvm.edu/education/blackboard/assign.php?pid=25">Style a Table</a> Date Submitted: Feb 20, 2015</li>
+<li class="title summary">2015-02-25 - Exam II</a></li><li class="title summary">2015-03-13 - <a class="url" href="https://rerickso.w3.uvm.edu/education/blackboard/assign.php?pid=27">Redesign the Course Style</a></li>
 <li class="title summary">2015-03-27 - Exam III</a></li><li class="title summary">2015-04-03 - Style Before and After</a></li><li class="title summary">2015-04-17 - Web Usability Testing</a></li><li class="title summary">2015-04-24 - Exam IV</a></li><li class="title summary">2015-04-30 - Attendance</a></li><li class="title summary">2015-05-04 - Final Project 12:00 am</a></li></ol></article> <!-- ########### main Content ########### -->
 <footer>
 <p>Web designed by: <span id="author"></span>

@@ -15,7 +15,7 @@
 
 <title>Page Auto Redirect</title>
 
-<meta http-equiv="refresh" content ="5; url=https://algoldma.w3.uvm.edu/cs142/assignment4/syllabus.php">
+<meta http-equiv="refresh" content ="0; url=https://algoldma.w3.uvm.edu/cs142/assignment4/syllabus.php">
 
 </head>
 

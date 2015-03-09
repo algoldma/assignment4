@@ -67,7 +67,7 @@ $(function() {
 <span id="studentName">
 Student: algoldma [<a href="https://webauth.uvm.edu/webauth/logout">logout</a>]
 </span>
-<span id="studentGrade" >Current <a href="https://rerickso.w3.uvm.edu/education/blackboard/grades.php">Grade</a>: 78.1</span>
+<span id="studentGrade" >Current <a href="grades.php">Grade</a>: 78.1</span>
 <span id="classRank">
 Rank: 24 of 44
 </span>

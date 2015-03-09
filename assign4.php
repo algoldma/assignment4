@@ -1,10 +1,11 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
  <head>
  <meta charset="utf-8">
  <meta name="author" content="Robert M. Erickson">
- <title>SubmitAssignment - CS 142 (A) Advanced Web Design: CSS and Usability</title>
+ <title>Assign - CS 142 (A) Advanced Web Design: CSS and Usability</title>
  <meta name="description" content="This course provides an in depth exploration of the foundation of  Cascading Style Sheets and covering Web Usability to help you create a pleasing user experience for visitors to your site."/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- https://rerickso.w3.uvm.edu/education/blackboard/css/base.css -->
@@ -53,7 +54,7 @@ $(function() {
 <script src="misc.js"></script>
 </head>
 
-<body id="submitAssignment">
+<body id="assign">
 <div id="topbox"> <!-- ************ top box ************ -->
 <header> <!-- ************ header ************ -->
 		<h1 id="classtitle">
@@ -67,48 +68,58 @@ $(function() {
 <span id="studentName">
 Student: algoldma [<a href="https://webauth.uvm.edu/webauth/logout">logout</a>]
 </span>
-<span id="studentGrade" >Current <a href="grades.php">Grade</a>: 78</span>
+<span id="studentGrade" >Current <a href="https://rerickso.w3.uvm.edu/education/blackboard/grades.php">Grade</a>: 76.9</span>
 <span id="classRank">
-Rank: 28 of 45
+Rank: 24 of 45
 </span>
 </aside> <!-- %^%^%^%^%^ student info %^%^%^%^%^ -->
 
 <nav id="mainMenu"> <!-- %^%^%^%^%^%^%^%^%^%^%^%^ Navigation %^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^% -->
 <ol>
-<li class="menuLink"><a href="assignments.php">Assignments</a></li>
+<li class="menuLink activeLink"><a href="assignments.php">Assignments</a></li>
 <li class="menuLink"><a href="calendar.php?abWeek=10">Calendar</a></li>
 <li class="menuLink"><a href="lectures.php">Lectures</a></li>
 <li class="menuLink"><a href="media.php">Resources</a></li>
 <li class="menuLink"><a href="sick.php">Sick</a></li>
 <li class="menuLink"><a href="syllabus.php">Syllabus</a></li>
-<li class="menuLink activeLink"><a href="submitAssignment.php">Submit Assignment</a></li>
+<li class="menuLink"><a href="submitAssignment.php">Submit Assignment</a></li>
 </ol>
 </nav> <!-- navigation -->
 </div> <!-- ************ top box ************ -->
 <!-- place admin menu code here -->
 <!-- userlevel = 1.5  -->
 <article id="mainContent"> <!-- ######################## main Content 
-######################## --><aside id="upcoming"><h1>Milestones</h1><div class="box"><h1>Assignment </h1><ol class="AssignmentLink"><li class="title summary"><a class="url" href="assign.php?pid=27">Redesign the Course Style</a> Friday the 13th</li></ol></div><div class="box"><h1>Test </h1><ol class="examLink"><li class="title summary">Exam II Wednesday the 25th</li></ol></div></aside><section id='submit'>
-<h1>Student: <a target='_blank' href='https://algoldma.w3.uvm.edu/cs142'>Aidan L. Goldman</a></h1>
+######################## --><aside id="upcoming"><h1>Milestones</h1><div class="box"><h1>Lecture </h1><ol class="LecturesLink"><li class="title summary"><a class="url" href="lecture.php?lid=104">CSS: Ch 11, 12, 13</a></li></ol></div><div class="box"><h1>Assignment </h1><ol class="AssignmentLink"><li class="title summary"><a class="url" href="assign.php?pid=25">Style a Table</a> Friday the 20th</li><li class="title summary">Peer Grading <span class="relaseDate">Due Date: 2014-06-05</span> Thursday the 5th</li>
+</ol></div><div class="box"><h1>Test </h1><ol class="examLink"><li class="title summary">Exam II Wednesday the 25th</li></ol></div></aside><div id="slide"><h1>Assignment: Style a Table</h1><h2>DUE: 2015-02-20</h2><h2>Submitted Status: Not submittted.</h2><h2>Category: Homework, Weight: 6.25%</h2><h2>Folder Name: assignment3</h2><p>Link to your assignment (when you have it posted): </p><p class='firstLine'><a href='https://algoldma.w3.uvm.edu/cs142/assignment3/table.php' target='_blank'>https://algoldma.w3.uvm.edu/cs142/assignment3/table.php</a></p> <h1>Assignment #1: Styling a table</h1> 
 
-<form method='post' id='chooseAssignment' action='/education/blackboard/submitAssignment.php' style='display: inline;'>
-<fieldset style='display: inline;'><select name='lstAssignments'>
-<option value='-1' selected='selected'>Choose Assignment</option>
-				<option value='22' >Style a Form</option>
-				<option value='24' >Styling a Resume</option>
-				<option value='25' >Style a Table</option>
-				<option value='27' >Redesign the Course Style</option>
-</select>
-<input type='submit' value='Pick Assignment' name='cmdAssignment' />
-</fieldset>
-</form>
-<h2  class='submith1'>1: Submission for:  </h2>
-<form action="/education/blackboard/submitAssignment.php"	method="post" id="frmSubmit">
-<input type="hidden" name="hiddenToken" value="c529fc7cf753dbac62c1629f7cf483fbbf5a3733">
-</form>
-<p>Please choose an assignment</p></section>
+<ol>
+    <li>Use my <a href="2015_Spring/cs142/assignments/table-source.php">table template</a> and create a style for it. You should name your file table.php as that is the name of my file (body id="table")</li>
+    <li>Name your style sheet: table.css</li>
+    <li>Create an alternate style: table2.css</li>
+    <li>You cannot modify the html.</li>
+    <li>You will be graded on the overall looks of your table.</li>
+    
+    <li>You can test your CSS by trying this link: (submitting your form from this site will not work so don't worry about that, we will have to go to your actual form)
+        <a target="_blank" href="https://rerickso.w3.uvm.edu/education/blackboard/2015_Spring/cs142/assignments/table.php?url=//algoldma.w3.uvm.edu/cs142/assignment3&amp;style=table.css&amp;style2=table2.css">My table with Aidan L. Goldman's CSS</a>
+</li>
+        
+    <li>Be sure all your pages:
+	<ol>
+            <li>have valid  css 3 (w3c.org standards).</li>
+        </ol>
+    </li>
+    
+    <li>You will be graded on the quality of <a href="peerGrade.php"> your peer grading</a>.  Peer grading needs to be completed in 48 hours from the due date.</li>
+    
+    
+</ol>
 
-</article> <!-- ########### main Content ########### -->
+<?
+
+$_SESSION["classSite"]=false;
+
+?>
+</div> <!--  id="slide" --></article> <!-- ########### main Content ########### -->
 <footer>
 <p>Web designed by: <span id="author"></span>
 </p>

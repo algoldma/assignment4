@@ -27,7 +27,6 @@ html, body {height: 100%;}
     body {
     width:100%;
     background:#fff;
-    background-image: url(hubble/randomBg.php);
     background-attachment:fixed;
     min-width:600px;
     font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
@@ -271,6 +270,7 @@ html, body {height: 100%;}
     width: 74.3333%;
     float:right;
     margin-right:3em;
+    cursor: url(rocket1.cur), url(rocket1.png), url(rocket2.png);
     }
 
     #mainContent a:visited{
@@ -372,17 +372,19 @@ html, body {height: 100%;}
     table#grading, table#grading td, table#grading th{
     border: 1px solid gray; 
     padding: 8px; 
-    text-align: right;
+    text-align: center;;
+    width:45%;
     }
-
+    #grading > tbody > tr:nth-child(3) th{border-radius:0%;}
     .standard {
     color: Black;
     text-align: left;
     background-color: white;
     font-family: Arial;
     border-collapse: collapse;
+    border-radius:8px;
     }
-
+    .standard tbody{border-radius:8px;}
     .standard th {
     border-color: black;
     color: white;
@@ -398,7 +400,16 @@ html, body {height: 100%;}
     text-align: right;
     font-family: Arial, Verdana, Geneva, Helvetica, sens-serif;
     }
+    .standard > tbody > tr:nth-child(1) > td{
+        border-top-style:hidden;
+        border-left-style:hidden;
+        border-right-style:hidden;
+    }
+    .standard > tbody > tr:nth-child(2), .standard > tbody > tr:nth-child(3), .standard > tbody > tr:nth-child(4), .standard > tbody > tr:nth-child(5){
+        border-left-style:hidden;
+        border-right-style:hidden;
 
+    }
 
     /* ===================  Main Content Section  =============================== */
     /* -------------------  layout                ------------------------ */
@@ -1051,6 +1062,7 @@ footer{
     height: 50px;
     left: 0;
     margin-top: -50px;
+    margin-bottom: 20px;
     margin-right:3em;
     padding: 2em 2em 0;
     position: relative;
@@ -1299,7 +1311,7 @@ media query templates
     body{
         color: #2C2C2C;
         background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBg.php);        
-        background-color: green;
+        background-color: black;
         font: normal 100% Cambria, Georgia, serif;
         width: 1200px;
         margin: 0 auto;
@@ -1341,7 +1353,7 @@ media query templates
         margin-bottom: 11%;
     }
     #toolmenu:before {
-        content: 'Min-Width: 1200px';
+        content: '<form><input type="button" onClick="history.go(0)" value="Refresh"></form>';
     }
 
     .menuLink a:link{
