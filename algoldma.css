@@ -58,7 +58,7 @@ html, body {height: 100%;}
     }
 
     code{
-    font-family: "Courier New", Courier, monospace 
+    font-family:  Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     }
     h1, h2, h3 {
     display:block;
@@ -246,45 +246,15 @@ html, body {height: 100%;}
     border-top: thin solid gray;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;*/
-    border-top-left-radius:8px;
-    border-bottom-left-radius:8px;
+    margin-right: -10%;
+    }
+#mainMenu > ol > li.menuLink:nth-child(7){
+    min-width:110%;
+}
+.menuLink a{
     border-top: thin solid gray;
-    border-left: thin solid gray;
-    border-bottom:thin solid gray;
-    }
-    .menuLink a:before{
-        background:url("https://algoldma.w3.uvm.edu/cs142/assignment4/rocket.png");
-        content: " ";
-        display: block;
-        height: 50px;
-        position: absolute;
-        left:50%;
-        width: 50px;
-        z-index: -1;
-        -webkit-animation: myOrbit 4s linear infinite; /* Chrome, Safari 5 */
-        -moz-animation: myOrbit 4s linear infinite; /* Firefox 5-15 */
-        -o-animation: myOrbit 4s linear infinite; /* Opera 12+ */
-        animation: myOrbit 4s linear infinite; /* Chrome, Firefox 16+, 
-                                                      IE 10+, Safari 5 */
-    }
-    @-webkit-keyframes myOrbit {
-    from { -webkit-transform: rotate(0deg) translateX(50px) rotate(0deg); }
-    to   { -webkit-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
-}
-
-    @-moz-keyframes myOrbit {
-    from { -moz-transform: rotate(0deg) translateX(50px) rotate(0deg); }
-    to   { -moz-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
-}
-
-    @-o-keyframes myOrbit {
-    from { -o-transform: rotate(0deg) translateX(50px) rotate(0deg); }
-    to   { -o-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
-}
-
-    @keyframes myOrbit {
-    from { transform: rotate(0deg) translateX(50px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+     border-left: thin solid gray;
+     border-bottom:thin solid gray;
     }
     .menuLink a:link{
     background-color: #D8DFEA;
@@ -309,7 +279,6 @@ html, body {height: 100%;}
     border-top: thin solid green;
     border-right: thin solid green;
     color: white;
-    padding: 1em;	
     }
 
     /* ===================  Main Content Section  =============================== */
@@ -431,7 +400,7 @@ html, body {height: 100%;}
     .standard {
     color: Black;
     text-align: left;
-    font-family: Arial;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;;
     border-collapse: collapse;
     }
     .standard th {
@@ -440,8 +409,6 @@ html, body {height: 100%;}
     border: solid #000 1px;
     background-color:  #6296A1;
     text-align: center;
-    font-family: Arial, Verdana, Geneva, Helvetica, sens-serif;
-    padding: 4px; 
     }
 
     .standard td {
@@ -567,26 +534,6 @@ html, body {height: 100%;}
         padding: .5em;
         }
 
-        .small{
-        width: 150px;
-        }
-        .fifty{
-        width: 50%;
-        }
-        .onehundred{
-        width: 100%;
-        }
-        figure.img-left{
-        border: thin solid darkslategray;
-        float: left;
-        padding: .5em;
-        margin-right: 1em;
-        }
-        figcaption{
-        text-align: center;
-        color: #839E99;
-        font-style: italic; 
-        }
 
         .LecturesLink{ /* also used on calendar */  
         list-style-type: none;
@@ -1190,7 +1137,7 @@ footer p{
 
 /* -------  i put this here so you can have your name show up  -------------- */
 footer #author:after{
-    content:"Robert Erickson"; 
+    content:"Aidan Goldman"; 
 }
 
 #ProcessingTime{
@@ -1229,7 +1176,7 @@ ul#icons span.ui-icon {float: left; margin: 0 4px;}
 body{
     background-color: #dcdbd9;
     color: #2C2C2C;
-    font: normal 100% Cambria, Georgia, serif;
+    font: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBg.php);
     background-repeat: repeat-y;
     background-size:100%;
@@ -1328,7 +1275,7 @@ media query templates
     body{
         background-color: black;
         color: #2C2C2C;
-        font: normal 100% Cambria, Georgia, serif;
+        font: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         background-image: url(https://algoldma.w3.uvm.edu/cs142/assignment4/hubble/randomBG.jpg);
         background-repeat: repeat;        
         background-size:100%;
@@ -1444,7 +1391,7 @@ media query templates
         background-repeat: repeat-y;
         background-size:100%;
         background-color: black;
-        font: normal 100% Cambria, Georgia, serif;
+        font: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         width: 1200px;
         margin: 0 auto;
     }
@@ -1503,6 +1450,40 @@ media query templates
 
         padding: 1em;	
     }
+    .menuLink a:before{
+        background:url("https://algoldma.w3.uvm.edu/cs142/assignment4/rocket.png");
+        content: " ";
+        display: block;
+        height: 40px;
+        position: absolute;
+        left:75%;
+        width: 50px;
+        z-index: -1;
+        -webkit-animation: myOrbit 4s linear infinite; /* Chrome, Safari 5 */
+        -moz-animation: myOrbit 4s linear infinite; /* Firefox 5-15 */
+        -o-animation: myOrbit 4s linear infinite; /* Opera 12+ */
+        animation: myOrbit 4s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+    }
+    @-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(318deg) translateX(30px); }
+    to   { -webkit-transform: rotate(-45deg) translateX(30px); }
+}
+
+    @-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(318deg) translateX(30px);}
+    to   { -moz-transform: rotate(-45deg) translateX(30px);}
+}
+
+    @-o-keyframes myOrbit {
+    from { -o-transform: rotate(318deg) translateX(30px);}
+    to   { -o-transform: rotate(-45deg) translateX(30px);}
+}
+
+    @keyframes myOrbit {
+    from { transform: rotate(318deg) translateX(30px);}
+    to   { transform: rotate(-45deg) translateX(30px);}
+    }
 }
 @media screen and (max-width: 1050px){
     .menuLink{
@@ -1544,8 +1525,8 @@ media query templates
 
 }
 @media screen and (min-width:1315px){
-    aside#upcoming{left:71%;}
-    #lectureSlide #otherMedia, #displayAssign #otherMedia, #lecture #otherMedia, #upcoming + #otherMedia{left:71%;}
+    aside#upcoming{left:72%;}
+    #lectureSlide #otherMedia, #displayAssign #otherMedia, #lecture #otherMedia, #upcoming + #otherMedia{left:72%;}
 }
 @media screen and (max-height:744px){
     aside#upcoming{
