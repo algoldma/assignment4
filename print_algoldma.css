@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 11, 2015, 7:30:46 PM
+    Author     : GoldDust_Au
+*/
+#upcoming,#otherMedia,footer,footer p,topbox,header,#studentInfo,#mainMenu,#tahours{
+    display:none;
+}
+th,td,tr{
+    border:thin solid black;
+}
+table{
+    border-collapse:collapse;
+}
+#vcalendar > tbody > tr.monthHeader{
+    background-color: black;
+}
+#attendanceRow{
+    display:none;
+}
+#vcalendar > tbody > tr > td {
+    width:calc(100%/7);
+}
+h1,h2,h3{
+    text-align:center;
+    margin-top:-2%;
+    margin-bottom:-2%;
+}
+ol, ul{
+    list-style-type:none;
+}
+#slide ol, #slide ul{
+    list-style-type:initial;
+}
+li{
+    padding-bottom:1%;
+}
