@@ -257,7 +257,6 @@ html, body {height: 100%;}
     .menuLink{
     /*display: inline;*/
     margin-bottom: 11%;
-    margin-right: -10%;
     }
     #mainMenu > ol > li.menuLink:nth-child(7){
         min-width:110%;
@@ -281,6 +280,7 @@ html, body {height: 100%;}
     border-right: thin solid #3B5998;
     color: navy;
     padding: 1em;
+    border-radius:100%;
     }
 
     nav#mainMenu ol li.menuLink a:visited{
@@ -439,10 +439,6 @@ html, body {height: 100%;}
     }
     #mainContent > table > tbody > tr.NotGraded.\33 3{border-bottom-style: hidden;}
     #mainContent > table > tbody > tr.GradesReleased.\32 2 > td.comments{width:50%;}
-    #mainContent > table > tbody > tr:nth-child(1) > td {
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
     #mainContent > table > tbody > tr:nth-child(1){    
         border-style: solid solid dashed solid;
         border-width: thin;
@@ -769,6 +765,10 @@ tr.days th.sat, tr.days th.sun {
     border: 0px solid gray; 
     border-width: 0 0 1px 1px;
     width:14%;
+}
+.Present,.Late,.Sick,.Personal,.Absent,.FreeDay{
+    border-radius:100%;
+    height:1em;
 }
 
 #calendar table td.Sat {
@@ -1240,7 +1240,7 @@ h1{
     font-weight:bold;
     background-color: transparent;
     border: none;
-    text-align:left;
+    text-align:end;
 }
 
 #toolmenu{
@@ -1433,6 +1433,7 @@ media query templates
         left:0%;
         text-align:right;
         list-style-position: inside;
+        margin-right:5%;
     }
 
     #mainMenu ol{
@@ -1442,8 +1443,8 @@ media query templates
     }
 
     #mainMenu .menuLink.activeLink a{
-        border: medium solid #3B5998;
-        border-radius:8px;
+        border: thick solid #3B5998;
+        color:white;
     }
 
     #mainMenu a{
@@ -1472,7 +1473,7 @@ media query templates
 
         padding: 1em;	
     }
-    .menuLink a:before{
+    .menuLink.activeLink a:before{
         background:url("https://algoldma.w3.uvm.edu/cs142/assignment4/rocket.png");
         content: " ";
         display: block;
@@ -1480,7 +1481,7 @@ media query templates
         width: 50px;
         margin-top:5%;
         position: absolute;
-        left:75%;
+        left:65%;
         z-index: -1;
         -webkit-animation: myOrbit 4s linear infinite; /* Chrome, Safari 5 */
         -moz-animation: myOrbit 4s linear infinite; /* Firefox 5-15 */
@@ -1490,23 +1491,23 @@ media query templates
         transform-origin:100% 0%;
     }
     @-webkit-keyframes myOrbit {
-    from { -webkit-transform: rotate(318deg) translateX(50px)translateY(1px); }
-    to   { -webkit-transform: rotate(-45deg) translateX(50px)translateY(1px); }
+    from { -webkit-transform: rotate(318deg) translateX(55px)translateY(1px); }
+    to   { -webkit-transform: rotate(-45deg) translateX(55px)translateY(1px); }
 }
 
     @-moz-keyframes myOrbit {
-    from { -moz-transform: rotate(318deg) translateX(50px)translateY(1px);}
-    to   { -moz-transform: rotate(-45deg) translateX(50px)translateY(1px);}
+    from { -moz-transform: rotate(318deg) translateX(55px)translateY(1px);}
+    to   { -moz-transform: rotate(-45deg) translateX(55px)translateY(1px);}
 }
 
     @-o-keyframes myOrbit {
-    from { -o-transform: rotate(318deg) translateX(50px)translateY(1px);}
-    to   { -o-transform: rotate(-45deg) translateX(50px)translateY(1px);}
+    from { -o-transform: rotate(318deg) translateX(55px)translateY(1px);}
+    to   { -o-transform: rotate(-45deg) translateX(55px)translateY(1px);}
 }
 
     @keyframes myOrbit {
-    from { transform: rotate(318deg) translateX(50px)translateY(1px);}
-    to   { transform: rotate(-45deg) translateX(50px)translateY(1px);}
+    from { transform: rotate(318deg) translateX(55px)translateY(1px);}
+    to   { transform: rotate(-45deg) translateX(55px)translateY(1px);}
     }
 }
 @media screen and (max-width: 1050px){
