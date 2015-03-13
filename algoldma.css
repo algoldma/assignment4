@@ -10,7 +10,6 @@ and open the template in the editor.
 
 
 /* ===================  General Section  ==================================== */
-@import url('reset.css');
 * {
     font-size:12pt;
     font-family:Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
@@ -807,9 +806,9 @@ td.Jun div.date, td.Aug div.date{
 }
 
 #calendar table td.atoday {
-    color: #C33;
+    color: white;
     font-weight: bold; 
-    background: #FF6; 
+    background: #D5ACAC; 
     border: 1px solid black;
 }
 tr:nth-child(3) > th:nth-child(1){border-top-left-radius:8px;}
@@ -910,7 +909,7 @@ tr:nth-child(36) > td:nth-child(2){border-bottom-right-radius: 8px;}
 #tahours .dayColumn{
     float: left;
     font-size: 10px;
-    width: calc(99%/5.16);
+    width: 19%;
     min-height:720px;
     margin-right:-.3%;
     border:medium solid #191d29;
@@ -930,7 +929,7 @@ tr:nth-child(36) > td:nth-child(2){border-bottom-right-radius: 8px;}
 #tahours a:visited{color:#6296a1;}
 #tahours a:hover{
     background-color: highlight;
-    border-style:thin;
+    border-width:thin;
     border-collapse:collapse;
     border-color:rgba(0,0,0,0);
     text-decoration:none;
@@ -1473,6 +1472,7 @@ media query templates
 
         padding: 1em;	
     }
+    /*NON-VALIDATING SECTION - used for animation does not validate for all browsers*/
     .menuLink.activeLink a:before{
         background:url("https://algoldma.w3.uvm.edu/cs142/assignment4/rocket.png");
         content: " ";
@@ -1509,7 +1509,9 @@ media query templates
     from { transform: rotate(318deg) translateX(55px)translateY(1px);}
     to   { transform: rotate(-45deg) translateX(55px)translateY(1px);}
     }
+    /*END OF NON-VALIDATING SECTION*/
 }
+
 @media screen and (max-width: 1050px){
     .menuLink{
         margin-bottom:0%;
@@ -1543,7 +1545,7 @@ media query templates
 }
 @media screen and (max-width: 1150px){
       #mainMenu{width:initial;}
-      #taHours .dayColumn{width:calc(74%/5.16)}
+      #taHours .dayColumn{width:14.34%;}
 
 }
 @media screen and (max-width: 965px){
