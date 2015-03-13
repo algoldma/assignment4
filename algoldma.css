@@ -617,8 +617,8 @@ html, body {height: 100%;}
 /* ===================  Main Content Section  =============================== */
 /* -------------------  Calendar page         ------------------------------- */
 .Absent{
-    color: #ffbfbf !important;
-    background: #aa0011 !important;
+    color: black !important;
+    background: #990033 !important;
     text-align: center;	
 }
 
@@ -669,20 +669,20 @@ div.date{
 }
 
 .Late{
-    color: #24B300 !important;
-    background: #ddffdf !important;
+    color: black !important;
+    background: #9393CC !important;
     text-align: center;	
 }
 
 .Personal{
-    color: #aa0011 !important;
-    background: #ffcfcf !important;
+    color: black !important;
+    background: #B3D1F0 !important;
     text-align: center;	
 }
 
 .Present{
-    color: #24B300 !important;
-    background: #CCFFBF !important;
+    color: black !important;
+    background: #C5C5E3 !important;
     text-align: center;
 }
 
@@ -690,8 +690,8 @@ div.date{
     border: dashed medium #ff0000 !important;
 }
 .Sick{
-    color: #aa0011 !important;
-    background: #ffadad !important;
+    color: black !important;
+    background: #80B2E6 !important;
     text-align: center;	
 }
 
@@ -760,7 +760,7 @@ tr.days th.sat, tr.days th.sun {
 
 #calendar table td {
     vertical-align:top;
-    padding:3px; 
+    padding:10px; 
     border: 0px solid gray; 
     border-width: 0 0 1px 1px;
     width:14%;
