@@ -130,25 +130,45 @@ html, body {height: 100%;}
     }
 
 
-    /* ===================  Header  Section  ==================================== */
-    header{width:124%;}
+        /* ===================  Header  Section  ==================================== */
+    header{
+        width:124%;
+        box-shadow: 0px 0px 25px #6296a1;
+}
     #topbox{
     padding: 1em 2em 0;
-    width: 74.3333%; 
+    width: 74.3333%;
+    color: black;
     }
-    #header {
-    background-color: #3B5998;
-    border-bottom:1px solid #000;
-    color: #fff;
-    padding:10px;
+
+    header {
+    color: white;
+    padding:9px;
+    background-color: rgb(98,150,161);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     }
- 
+    
+    #classtitle>a:nth-child(2){
+        font-size: 20px;
+        text-align: center;
+        color: black;
+    }
+    
+    #topbox a {
+        color: black;
+    }
+    #classtitle>a:nth-child(1){
+        font-size: 20px;
+        color: black;
+    }
+
     #header a:link{
-    color: #fff;
+    color: white;
     }
 
     #header a:hover{
-    background-color:#6D86B7;
+    background-color: white;
     }
 
     #classtitle{
@@ -163,9 +183,11 @@ html, body {height: 100%;}
     #toolmenu{
     float:right;
     }
+
     /* ===================  Student Info Section  =============================== */
     #studentInfo{  
-    color:black;
+    color: white;
+    background-color: rgb(98,150,161);
     /* 
     width: 16%;
     border: thick dashed #3B5998;
@@ -173,16 +195,10 @@ html, body {height: 100%;}
     margin-bottom: 1em;
     padding: .3em;
     width:124.9%;
-    }
-    #studentInfo:after{
-        content:"-Refresh page to see new background-\a";
-        white-space:pre;
-        display:block;
-        position:relative;
-        margin: 0 auto;
-        text-align:center;
-        width:100%;
-        
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    box-shadow:  0px 0px 25px #6296a1;
     }
 
     #studentGrade{
@@ -190,9 +206,9 @@ html, body {height: 100%;}
     }	
 
     #studentGrade a:visited{
-    color: navy !important;
-    }
-    #classtitle > a:visited{color: navy !important;}
+    color: black;
+    text-decoration: none;
+    }	
 
     #classRank{
     display:block;
@@ -248,16 +264,13 @@ html, body {height: 100%;}
     border-top-right-radius: 8px;*/
     margin-right: -10%;
     }
-#mainMenu > ol > li.menuLink:nth-child(7){
-    min-width:110%;
-}
 .menuLink a{
     border-top: thin solid gray;
      border-left: thin solid gray;
      border-bottom:thin solid gray;
     }
     .menuLink a:link{
-    background-color: #D8DFEA;
+    background-color: #6296a1;
     border-left: thin solid #3B5998;
     border-top: thin solid #3B5998;
     border-right: thin solid #3B5998;
@@ -266,11 +279,11 @@ html, body {height: 100%;}
     }
 
     nav#mainMenu ol li.menuLink a:visited{
-    background-color: #D8DFEA;
+    background-color: #6296a1;
     border-left: thin solid #3B5998;
     border-top: thin solid #3B5998;
     border-right: thin solid #3B5998;
-    color: #6296a1 !important;
+    color: #b4b1c6 !important;
     padding: 1em;
     }
     .menuLink a:hover{
@@ -449,6 +462,14 @@ html, body {height: 100%;}
     width: 57.8888889%;/* 566px / 900px less some padding
     padding: 0 1em 2em 0;
     border-right: dashed thin #999;*/
+    }
+    h1 + h1 + #otherMedia{
+        text-indent:0;
+        z-index:0;
+        max-width:75%
+    }
+    h1 + h1 + #otherMedia ol li{
+        margin-left:20%;
     }
     #otherMedia,#upcoming{z-index:1;}
     #lectureSlide #otherMedia, #displayAssign #otherMedia, #lecture #otherMedia,#upcoming + #otherMedia{
@@ -886,7 +907,7 @@ tr:nth-child(36) > td:nth-child(2){border-bottom-right-radius: 8px;}
     float: left;
     font-size: 10px;
     width: calc(99%/5.16);
-    min-height:700px;
+    min-height:720px;
     margin-right:-.3%;
     border:medium solid #191d29;
     background-color:#B4B1C6;
@@ -1391,7 +1412,7 @@ media query templates
         background-repeat: repeat-y;
         background-size:100%;
         background-color: black;
-        font: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        font: normal 100% Cambria, Georgia, serif;
         width: 1200px;
         margin: 0 auto;
     }
@@ -1493,6 +1514,8 @@ media query templates
     .menuLink a{
         float:left;
         border-radius:8px 8px 0 0;
+        max-height:1em;
+        margin:0;
     }
     #mainMenu{
         min-width:140%;
@@ -1520,7 +1543,8 @@ media query templates
 
 }
 @media screen and (max-width: 965px){
-    #tahours > div:nth-child(6){margin-right:-2%;}
+    #tahours > div:nth-child(6){margin-right:-4%;}
+    #tahours > div:nth-child(2){max-height:;}
     
 
 }
@@ -1531,6 +1555,16 @@ media query templates
 @media screen and (max-height:744px){
     aside#upcoming{
         top:28%;
+        min-height:20%;
+}
+    #lectureSlide #otherMedia, #displayAssign #otherMedia, #lecture #otherMedia{
+        margin-top:3%;
+        max-height:22%;
+    }
+}
+@media screen and (max-height:655px){
+        aside#upcoming{
+        margin-top:5%;
         min-height:20%;
 }
     #lectureSlide #otherMedia, #displayAssign #otherMedia, #lecture #otherMedia{
