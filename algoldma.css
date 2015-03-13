@@ -297,7 +297,44 @@ html, body {height: 100%;}
     border-right: thin solid green;
     color: white;
     }
+    /*NON-VALIDATING SECTION - used for animation does not validate for all browsers*/
+    .menuLink.activeLink a:before{
+        background:url("https://algoldma.w3.uvm.edu/cs142/assignment4/rocket.png");
+        content: " ";
+        display: block;
+        height: 38px;
+        width: 50px;
+        margin-top:5%;
+        position: absolute;
+        left:65%;
+        z-index: -1;
+        -webkit-animation: myOrbit 4s linear infinite; /* Chrome, Safari 5 */
+        -moz-animation: myOrbit 4s linear infinite; /* Firefox 5-15 */
+        -o-animation: myOrbit 4s linear infinite; /* Opera 12+ */
+        animation: myOrbit 4s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+        transform-origin:100% 0%;
+    }
+    @-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(318deg) translateX(55px)translateY(1px); }
+    to   { -webkit-transform: rotate(-45deg) translateX(55px)translateY(1px); }
+}
 
+    @-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(318deg) translateX(55px)translateY(1px);}
+    to   { -moz-transform: rotate(-45deg) translateX(55px)translateY(1px);}
+}
+
+    @-o-keyframes myOrbit {
+    from { -o-transform: rotate(318deg) translateX(55px)translateY(1px);}
+    to   { -o-transform: rotate(-45deg) translateX(55px)translateY(1px);}
+}
+
+    @keyframes myOrbit {
+    from { transform: rotate(318deg) translateX(55px)translateY(1px);}
+    to   { transform: rotate(-45deg) translateX(55px)translateY(1px);}
+    }
+    /*END OF NON-VALIDATING SECTION*/
     /* ===================  Main Content Section  =============================== */
     #mainContent {
     background-color: rgba(255,255,255,0.75);;
@@ -1538,6 +1575,7 @@ media query templates
        }
     #upcoming,#otherMedia{max-height:25%;}
     #upcoming{top:35%;}
+    
 }
 @media screen and (max-width: 882px){
     #upcoming,#otherMedia{max-height:35%; margin-right:2%;}
@@ -1576,4 +1614,12 @@ media query templates
         margin-top:3%;
         max-height:22%;
     }
+}
+#mainMenu .menuLink.activeLink a{
+    border: thick solid #3B5998;
+    color:white;
+}
+#mainMenu .menuLink{
+    margin-top:15%;
+    margin-bottom:17%;
 }
