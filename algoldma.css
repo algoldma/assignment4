@@ -13,6 +13,7 @@ and open the template in the editor.
 @import url('reset.css');
 * {
     font-size:12pt;
+    font-family:Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .printonly{display:none;}
@@ -29,7 +30,6 @@ html, body {height: 100%;}
     background:#fff;
     background-attachment:fixed;
     min-width:600px;
-    font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
     }
 
     a{
@@ -38,7 +38,7 @@ html, body {height: 100%;}
     }
 
     a[target="_blank"]{
-    border-bottom: 2px solid red !important;
+    border-bottom: 1px dotted #cf5d5d !important;
     }
 
     a:link{
@@ -384,11 +384,10 @@ html, body {height: 100%;}
     }
 
     .NotGraded {
-    background-color: #772E39; 
+    background-color: #772e39 !important; 
     color: #ffffcc;
     }
     #listStudents span.NotGraded {
-    background-color: #aa0000; 
     color: #ffffcc;
     }
 
@@ -1074,7 +1073,7 @@ div #studentComments{
 }
 
 #media #otherMedia{
-    background-color: white;
+    background-color: rgba(255,255,255,.5);
     border: none;
     border-radius: 0;
     clear: none;
@@ -1438,11 +1437,8 @@ media query templates
     }
 
     #mainMenu .menuLink.activeLink a{
-        /*color: #000;	
-        background-color: #fff;
-        border-bottom: thick solid white;*/
-        border-right: thick solid white;
-        background-color: white;
+        border: medium solid #3B5998;
+        border-radius:8px;
     }
 
     #mainMenu a{
@@ -1475,35 +1471,37 @@ media query templates
         background:url("https://algoldma.w3.uvm.edu/cs142/assignment4/rocket.png");
         content: " ";
         display: block;
-        height: 40px;
+        height: 38px;
+        width: 50px;
+        margin-top:5%;
         position: absolute;
         left:75%;
-        width: 50px;
         z-index: -1;
         -webkit-animation: myOrbit 4s linear infinite; /* Chrome, Safari 5 */
         -moz-animation: myOrbit 4s linear infinite; /* Firefox 5-15 */
         -o-animation: myOrbit 4s linear infinite; /* Opera 12+ */
         animation: myOrbit 4s linear infinite; /* Chrome, Firefox 16+, 
                                                       IE 10+, Safari 5 */
+        transform-origin:100% 0%;
     }
     @-webkit-keyframes myOrbit {
-    from { -webkit-transform: rotate(318deg) translateX(30px); }
-    to   { -webkit-transform: rotate(-45deg) translateX(30px); }
+    from { -webkit-transform: rotate(318deg) translateX(50px)translateY(1px); }
+    to   { -webkit-transform: rotate(-45deg) translateX(50px)translateY(1px); }
 }
 
     @-moz-keyframes myOrbit {
-    from { -moz-transform: rotate(318deg) translateX(30px);}
-    to   { -moz-transform: rotate(-45deg) translateX(30px);}
+    from { -moz-transform: rotate(318deg) translateX(50px)translateY(1px);}
+    to   { -moz-transform: rotate(-45deg) translateX(50px)translateY(1px);}
 }
 
     @-o-keyframes myOrbit {
-    from { -o-transform: rotate(318deg) translateX(30px);}
-    to   { -o-transform: rotate(-45deg) translateX(30px);}
+    from { -o-transform: rotate(318deg) translateX(50px)translateY(1px);}
+    to   { -o-transform: rotate(-45deg) translateX(50px)translateY(1px);}
 }
 
     @keyframes myOrbit {
-    from { transform: rotate(318deg) translateX(30px);}
-    to   { transform: rotate(-45deg) translateX(30px);}
+    from { transform: rotate(318deg) translateX(50px)translateY(1px);}
+    to   { transform: rotate(-45deg) translateX(50px)translateY(1px);}
     }
 }
 @media screen and (max-width: 1050px){
@@ -1544,7 +1542,6 @@ media query templates
 }
 @media screen and (max-width: 965px){
     #tahours > div:nth-child(6){margin-right:-4%;}
-    #tahours > div:nth-child(2){max-height:;}
     
 
 }
